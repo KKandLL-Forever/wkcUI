@@ -1,0 +1,59 @@
+{
+  "name": "wkc-test",
+  "version": "0.0.3",
+  "description": "UI框架",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "parcel index.html --no-cache",
+    "dev-test": "parcel watch test/* --no-cache & karma start",
+    "test": "parcel build test/* --no-cache --no-minify && karma start --single-run",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jiansitewang/Components-practice.git"
+  },
+  "keywords": [
+    "vue",
+    "ui"
+  ],
+  "author": "Jiansitewang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jiansitewang/Components-practice/issues"
+  },
+  "homepage": "https://github.com/Jiansitewang/Components-practice#readme",
+  "dependencies": {
+    "highlight": "^0.2.4",
+    "highlight.js": "^10.1.2",
+    "vue": "2",
+    "vue-highlight": "^0.0.0",
+    "vue-highlight.js": "^3.1.0",
+    "vue-highlightjs": "^1.3.3",
+    "vue-hot-reload-api": "^2.3.3"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^2.6.0",
+    "chai": "^4.2.0",
+    "chai-spies": "^1.0.0",
+    "karma": "^4.0.1",
+    "karma-chai": "^0.1.0",
+    "karma-chai-spies": "^0.1.4",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-mocha": "^1.3.0",
+    "karma-sinon-chai": "^2.0.2",
+    "mocha": "^6.0.2",
+    "node-sass": "^4.14.1",
+    "parcel-bundler": "^1.11.0",
+    "sass": "^1.17.2",
+    "sass-loader": "^9.0.2",
+    "sinon": "^7.2.7",
+    "sinon-chai": "^3.3.0",
+    "vue-template-compiler": "^2.6.7",
+    "vuepress": "^1.5.2"
+  },
+  "alias": {
+    "vue": "./node_modules/vue/dist/vue.common.js"
+  }
+}
