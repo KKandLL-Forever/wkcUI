@@ -16,7 +16,7 @@
               tab2
             </w-tabs-item>
             <template slot="extraAction">
-              <w-button>Extra Actions</w-button>
+              <w-button>Extra</w-button>
             </template>
           </w-tabs-head>
           <w-tabs-body>
@@ -61,7 +61,7 @@
               tab3
             </w-tabs-item>
             <template slot="extraAction">
-              <w-button>Extra Actions</w-button>
+              <w-button>Extra</w-button>
             </template>
           </w-tabs-head>
           <w-tabs-body>

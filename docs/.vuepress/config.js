@@ -1,12 +1,12 @@
 module.exports = {
-  base:'/Components-practice/',
+  base:'/wkcUI/',
   title: 'wkcUI',
   description: '学习vue',
   themeConfig: {
     lastUpdated: 'Last Updated',
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Github', link: 'https://github.com/Jiansitewang/Components-practice' },
+      { text: 'Github', link: 'https://github.com/KKandLL-forever/wkcUI' },
     ],
     sidebar: [
       {
