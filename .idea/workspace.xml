@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63f8d7a5-52fa-4832-a596-6bc77878803a" name="Default Changelist" comment="feat(demo迁移): demo迁移&#10;&#10;demo迁移">
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/button.vue" afterDir="false" />
+    <list default="true" id="63f8d7a5-52fa-4832-a596-6bc77878803a" name="Default Changelist" comment="feat(目录调整): 目录调整&#10;&#10;目录调整">
+      <change afterPath="$PROJECT_DIR$/docs/button/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/button-vp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/button-vp.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/grid-vp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/grid-vp.vue" afterDir="false" />
@@ -16,26 +13,9 @@
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/layout-vp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/layout-vp.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/tabs-vp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/tabs-vp.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/toast-vp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/toast-vp.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/button-group.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button-group.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/button.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/col.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/col.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icon.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/input.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/button.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/button.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/col.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/col.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/input.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/input.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/row.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/row.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button-group.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button-group.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,10 +76,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/var.scss" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/components/button.vue" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/app.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/package.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -302,8 +289,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.docs:dev" />
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.serve" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
         <item itemvalue="JavaScript 调试.localhost:1234" />
       </list>
@@ -361,13 +348,7 @@
       <workItem from="1621090760208" duration="1222000" />
       <workItem from="1621823413298" duration="318000" />
       <workItem from="1646665415509" duration="11499000" />
-    </task>
-    <task id="LOCAL-00020" summary="input组件初始化;button,button-group,icon,input添加name属性">
-      <created>1552114135764</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1552114135764</updated>
+      <workItem from="1646744456844" duration="5696000" />
     </task>
     <task id="LOCAL-00021" summary="input组件css样式基本完成">
       <created>1552894190273</created>
@@ -705,7 +686,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646709039819</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="feat(目录调整): 目录调整&#10;&#10;目录调整">
+      <created>1646744678658</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1646744678658</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -779,7 +767,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="toast组件新功能: 避免重复新建toast-2" />
     <MESSAGE value="toast组件新功能: 动画优化" />
     <MESSAGE value="注册组件名修改" />
     <MESSAGE value="添加tabs组件" />
@@ -804,7 +791,8 @@
     <MESSAGE value="feat(回顾写下之前写的代码): 回顾写下之前写的代码&#10;&#10;回顾写下之前写的代码" />
     <MESSAGE value="feat(准备替换node-sass至dart-sass): 准备替换node-sass至dart-sass&#10;&#10;准备替换node-sass至dart-sass" />
     <MESSAGE value="feat(升级vue-cli并使用dart-sass): 升级vue-cli并使用dart-sass&#10;&#10;升级vue-cli并使用dart-sass" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(升级vue-cli并使用dart-sass): 升级vue-cli并使用dart-sass&#10;&#10;升级vue-cli并使用dart-sass" />
+    <MESSAGE value="feat(目录调整): 目录调整&#10;&#10;目录调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(目录调整): 目录调整&#10;&#10;目录调整" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

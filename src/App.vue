@@ -86,6 +86,7 @@
   
   
     <div class="box">
+      <w-button icon="setting" :loading="loading1" @click="loading1 = !loading1" type="primary"></w-button>
       <w-button :loading="loading1" @click="loading1 = !loading1" type="primary">
         按钮
       </w-button>

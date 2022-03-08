@@ -28,7 +28,14 @@ module.exports = {
           '/components/toast',
           '/components/tabs',
         ]
-      }
+      },
+      {
+        title: '开发小记',
+        collapsable: false,
+        children: [
+          '/button/'
+        ]
+      },
     ],
   }
 }

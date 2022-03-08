@@ -56,9 +56,9 @@
 
 <script>
   import Vue from 'vue'
-  import Icon from '@/components/icon'
-  import Button from '@/components/button'
-  import ButtonGroup from '@/components/button-group'
+  import Icon from '../../../src/components/icon'
+  import Button from '../../../src/components/button'
+  import ButtonGroup from '../../../src/components/button-group'
   import VueHighlightJS from 'vue-highlightjs';
   import 'highlight.js/styles/atom-one-light.css';
   import mixin from '../mixin'

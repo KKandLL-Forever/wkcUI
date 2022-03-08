@@ -17,7 +17,9 @@
   }
 </script>
 <style lang="scss" scoped>
+@import "src/var";
   .w-button-group {
+    --border-radius: 4px;
     display: inline-flex;
     vertical-align: middle;
     > .w-button {
@@ -26,12 +28,12 @@
         margin-left: -1px;
       }
       &:first-child {
-        border-top-left-radius: var(--border-radius);
-        border-bottom-left-radius: var(--border-radius);
+        border-top-left-radius: $--border-radius-base;
+        border-bottom-left-radius: $--border-radius-base;
       }
       &:last-child {
-        border-top-right-radius: var(--border-radius);
-        border-bottom-right-radius: var(--border-radius);
+        border-top-right-radius: $--border-radius-base;
+        border-bottom-right-radius: $--border-radius-base;
       }
       &:hover {
         position: relative;

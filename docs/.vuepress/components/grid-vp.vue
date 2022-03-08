@@ -232,11 +232,11 @@
 
 <script>
   import Vue from 'vue'
-  import Icon from '@/components/icon'
-  import Button from '@/components/button'
-  import ButtonGroup from '@/components/button-group'
-  import Row from '@/components/row'
-  import Col from '@/components/col'
+  import Icon from '../../../src/components/icon'
+  import Button from '../../../src/components/button'
+  import ButtonGroup from '../../../src/components/button-group'
+  import Row from '../../../src/components/row'
+  import Col from '../../../src/components/col'
   import VueHighlightJS from 'vue-highlightjs';
   import 'highlight.js/styles/atom-one-light.css';
   import mixin from '../mixin'
