@@ -19,3 +19,20 @@ class接收一个数组
 ### button-group3个按钮border重合
 用 `margin-left/right:-1px;`  来抵消,不设置border会影响hover等其他状态
 
+### button-group子元素需要检测
+
+```vue
+<script>
+export default {
+  name: 'wkcButtonGroup',
+  mounted () {
+    for (let node of this.$el.children) {
+      let name = node.nodeName.toLowerCase()
+      if (name !== 'button') {
+        console.warn(`w-button-group 的子元素应该全是 w-button，但是你写的是 ${name}`)
+      }
+    }
+  }
+}
+</script>
+```
