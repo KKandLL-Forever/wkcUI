@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63f8d7a5-52fa-4832-a596-6bc77878803a" name="Default Changelist" comment="">
+    <list default="true" id="63f8d7a5-52fa-4832-a596-6bc77878803a" name="Default Changelist" comment="feat(回顾写下之前写的代码): 回顾写下之前写的代码&#10;&#10;回顾写下之前写的代码">
+      <change afterPath="$PROJECT_DIR$/src/var.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deploy.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/tabs-vp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/tabs-vp.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/button.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +23,7 @@
         <option value="CSS File" />
         <option value="Vue Single File Component" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -195,7 +194,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -303,14 +302,7 @@
       <workItem from="1620810453199" duration="492000" />
       <workItem from="1621090760208" duration="1222000" />
       <workItem from="1621823413298" duration="318000" />
-      <workItem from="1646665415509" duration="2550000" />
-    </task>
-    <task id="LOCAL-00017" summary="更改package.json中的dist/index.js">
-      <created>1552108037986</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1552108037986</updated>
+      <workItem from="1646665415509" duration="6574000" />
     </task>
     <task id="LOCAL-00018" summary="版本0.0.3">
       <created>1552108608014</created>
@@ -648,7 +640,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596530768783</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="feat(回顾写下之前写的代码): 回顾写下之前写的代码&#10;&#10;回顾写下之前写的代码">
+      <created>1646668284009</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1646668284009</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -709,7 +708,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="toast组件新功能: 自定义position" />
     <MESSAGE value="toast组件新功能: 避免重复新建toast" />
     <MESSAGE value="toast组件新功能: 渐变进入动画" />
     <MESSAGE value="toast组件新功能: 避免重复新建toast-2" />
@@ -734,7 +732,8 @@
     <MESSAGE value="vuePress更改各组件 pre的highlight样式" />
     <MESSAGE value="vuePress更改button各h2标题增加图标;增加api说明" />
     <MESSAGE value="vuePress更新各组件的api说明;各组件h2的icon更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="vuePress更新各组件的api说明;各组件h2的icon更新" />
+    <MESSAGE value="feat(回顾写下之前写的代码): 回顾写下之前写的代码&#10;&#10;回顾写下之前写的代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(回顾写下之前写的代码): 回顾写下之前写的代码&#10;&#10;回顾写下之前写的代码" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package.json">
