@@ -100,8 +100,8 @@
   import TabsContent from '../../../src/tabs-content'
   import TabsHead from '../../../src/tabs-head'
   import TabsItem from '../../../src/tabs-item'
-  import Button from '../../../src/button'
-  import Icon from '../../../src/icon'
+  import Button from '@/components/button'
+  import Icon from '@/components/icon'
   import VueHighlightJS from 'vue-highlightjs';
   import 'highlight.js/styles/atom-one-light.css';
   import mixin from '../mixin'

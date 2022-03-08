@@ -1,17 +1,17 @@
 import Vue from "vue";
-import Demo from "./demo.vue";
+import App from "./App.vue";
 
-import Button from './button'
-import Icon from './icon'
-import ButtonGroup from './button-group'
-import Input from './input'
-import Row from './row'
-import Col from './col'
-import Content from './content'
-import Footer from './footer'
-import Header from './header'
-import Layout from './layout'
-import Sider from './sider'
+import Button from './components/button'
+import Icon from './components/icon'
+import ButtonGroup from './components/button-group'
+import Input from './components/input'
+import Row from './components/row'
+import Col from './components/col'
+import Content from './components/content'
+import Footer from './components/footer'
+import Header from './components/header'
+import Layout from './components/layout'
+import Sider from './components/sider'
 // import Toast from './toast'
 // import plugin from './plugin'
 // import Tabs from './tabs'
@@ -42,5 +42,5 @@ Vue.component('w-sider', Sider)
 Vue.config.productionTip = false;
 
 new Vue({
-  render: h => h(Demo)
+  render: h => h(App)
 }).$mount("#app");

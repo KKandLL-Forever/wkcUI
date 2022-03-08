@@ -111,12 +111,12 @@
 
 <script>
   import Vue from 'vue'
-  import Layout from '../../../src/layout'
-  import Header from '../../../src/header'
-  import Content from '../../../src/content'
-  import Sider from '../../../src/sider'
-  import Footer from '../../../src/footer'
-  import Icon from '../../../src/icon'
+  import Layout from '@/components/layout'
+  import Header from '@/components/header'
+  import Content from '@/components/content'
+  import Sider from '@/components/sider'
+  import Footer from '@/components/footer'
+  import Icon from '@/components/icon'
   import VueHighlightJS from 'vue-highlightjs';
   import 'highlight.js/styles/atom-one-light.css';
   import mixin from '../mixin'

@@ -55,8 +55,8 @@
 
 <script>
   import Vue from 'vue'
-  import Input from '../../../src/input'
-  import Icon from '../../../src/icon'
+  import Input from '@/components/input'
+  import Icon from '@/components/icon'
   import VueHighlightJS from 'vue-highlightjs';
   import 'highlight.js/styles/atom-one-light.css';
   import mixin from '../mixin'
