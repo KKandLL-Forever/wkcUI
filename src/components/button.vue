@@ -3,9 +3,9 @@
   <button class="w-button" :class="[`icon-${iconPosition}`,`${type}`]" @click="$emit('click')">
     <w-icon class="icon" v-if="icon && !loading" :name="icon"></w-icon>
     <w-icon class="loading icon" v-if="loading" name="loading"></w-icon>
-    <div class="w-button-content">
+    <span class="w-button-content">
       <slot></slot>
-    </div>
+    </span>
   </button>
 </template>
 

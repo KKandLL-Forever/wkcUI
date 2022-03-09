@@ -13,5 +13,9 @@
 </script>
 
 <style lang="scss" scoped>
-  svg {width: 1em; height: 1em; }
+  svg {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    overflow: hidden;
+  }
 </style>
