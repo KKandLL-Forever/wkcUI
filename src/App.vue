@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
     <!--<w-tabs :selected="defaultSelectedTab" @update:selected="selectedTab = $event">-->
     <!--  <w-tabs :selected.sync="defaultSelectedTab">-->
     <!--    <w-tabs-head>-->
@@ -85,7 +85,7 @@
   
   
   
-    <div class="box">
+    <div class="button-box">
       <w-button icon="setting" :loading="loading1" @click="loading1 = !loading1" type="primary"></w-button>
       <w-button :loading="loading1" @click="loading1 = !loading1" type="primary">
         按钮
@@ -102,26 +102,28 @@
         <w-button icon="right" icon-position="right">下一页</w-button>
       </w-button-group>
     </div>
-    <div class="box">
-      <w-input value="李四" disabled></w-input>
-      <w-input value="张三" readonly></w-input>
-      <w-input value="王五" v-model="message"></w-input>
-      <p>{{message}}</p>
-      <button @click="message+=1">+1</button>
-    </div>
-    <div class="box">
-      <w-input value="王" @change="inputChange"></w-input>
-    </div>
-    <div class="box">
-      <w-input value="王" error="姓名不能少于两个字"></w-input>
-    </div>
+    
+    
+<!--    <div class="box">-->
+<!--      <w-input value="李四" disabled></w-input>-->
+<!--      <w-input value="张三" readonly></w-input>-->
+<!--      <w-input value="王五" v-model="message"></w-input>-->
+<!--      <p>{{message}}</p>-->
+<!--      <button @click="message+=1">+1</button>-->
+<!--    </div>-->
+<!--    <div class="box">-->
+<!--      <w-input value="王" @change="inputChange"></w-input>-->
+<!--    </div>-->
+<!--    <div class="box">-->
+<!--      <w-input value="王" error="姓名不能少于两个字"></w-input>-->
+<!--    </div>-->
 
   </div>
 </template>
 
 <script>
 export default {
-  name: "demo",
+  name: "app",
   data(){
     return {
       loading1: false,
@@ -158,5 +160,19 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+#app{
+  //position: relative;
+  //height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-box{
+  //position: absolute;
+  //top: 0;
+  //left: 0;
+  //bottom: 0;
+  //right: 0;
+  //margin: auto;
+}
 </style>

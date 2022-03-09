@@ -36,3 +36,12 @@ export default {
 }
 </script>
 ```
+
+### button相关scss知识
+
+@use    `@use "sass:math";`
+@chartset
+BEM规则
+mix混合
+变量 `$variables`
+脚本模式 `#{xxx}`
