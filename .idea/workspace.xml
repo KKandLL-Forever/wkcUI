@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63f8d7a5-52fa-4832-a596-6bc77878803a" name="Default Changelist" comment="feat: 理解elementUi对样式的设计;更新playground样式">
+    <list default="true" id="63f8d7a5-52fa-4832-a596-6bc77878803a" name="Default Changelist" comment="feat: 修复icon无法和文字居中对齐的bug(不使用display:flex)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/icon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icon.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/mixins/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/mixins/_button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/mixins/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/mixins/mixins.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,8 +282,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.docs:dev" />
         <item itemvalue="npm.serve" />
+        <item itemvalue="npm.docs:dev" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
         <item itemvalue="JavaScript 调试.localhost:1234" />
@@ -340,28 +342,7 @@
       <workItem from="1621090760208" duration="1222000" />
       <workItem from="1621823413298" duration="318000" />
       <workItem from="1646665415509" duration="11499000" />
-      <workItem from="1646744456844" duration="16922000" />
-    </task>
-    <task id="LOCAL-00024" summary="input.vue中的&lt;g-icon&gt;改成&lt;icon&gt;">
-      <created>1588427801027</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1588427801027</updated>
-    </task>
-    <task id="LOCAL-00025" summary="input.vue中的&lt;g-icon&gt;改成&lt;icon&gt;">
-      <created>1589373285983</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1589373285983</updated>
-    </task>
-    <task id="LOCAL-00026" summary="input.vue中的&lt;g-icon&gt;改成&lt;icon&gt;">
-      <created>1589374997490</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1589374997490</updated>
+      <workItem from="1646744456844" duration="23531000" />
     </task>
     <task id="LOCAL-00027" summary="可编辑的Row和Col 初步完成">
       <created>1592727893683</created>
@@ -685,7 +666,28 @@
       <option name="project" value="LOCAL" />
       <updated>1646838535463</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="feat: 修复icon无法和文字居中对齐的bug(不使用display:flex)">
+      <created>1646840520615</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1646840520615</updated>
+    </task>
+    <task id="LOCAL-00074" summary="feat: 修复icon无法和文字居中对齐的bug(不使用display:flex)">
+      <created>1646840569973</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1646840569973</updated>
+    </task>
+    <task id="LOCAL-00075" summary="feat: 修复icon无法和文字居中对齐的bug(不使用display:flex)">
+      <created>1646840671266</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1646840671267</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -759,7 +761,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="为tabs和其子组件创建eventBus(通过provide,inject)" />
     <MESSAGE value="tab切换功能实现" />
     <MESSAGE value="tab标签交互区域扩大" />
     <MESSAGE value="tab标签切换功能基本完成" />
@@ -784,7 +785,8 @@
     <MESSAGE value="button小记" />
     <MESSAGE value="button小记-补充" />
     <MESSAGE value="feat: 理解elementUi对样式的设计;更新playground样式" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 理解elementUi对样式的设计;更新playground样式" />
+    <MESSAGE value="feat: 修复icon无法和文字居中对齐的bug(不使用display:flex)" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 修复icon无法和文字居中对齐的bug(不使用display:flex)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

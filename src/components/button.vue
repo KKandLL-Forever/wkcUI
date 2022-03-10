@@ -1,6 +1,13 @@
 <template>
   <!--  <button class="w-button" :class="{[`icon-${iconPosition}`]: true}" @click="$emit('click')">-->
-  <button class="w-button" :class="[`icon-${iconPosition}`,`${type}`]" @click="$emit('click')">
+  <button
+    class="w-button"
+    :class="[
+      `icon-${iconPosition}`,
+      type ? `w-button--${type}` : '',
+      plain ? `is-plain` : '',
+      ]"
+    @click="$emit('click')">
     <w-icon class="icon" v-if="icon && !loading" :name="icon"></w-icon>
     <w-icon class="loading icon" v-if="loading" name="loading"></w-icon>
     <span class="w-button-content">
@@ -37,6 +44,10 @@ export default {
       validate(value){
         return value === 'default' || value === 'primary' || value === 'danger' || value === 'success' || value === 'info' || value === 'warning'
       }
+    },
+    plain:{
+      type: Boolean,
+      default: false
     }
   }
 }

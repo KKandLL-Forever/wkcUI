@@ -2,6 +2,20 @@
 @import './mixins/mixins';
 @import './mixins/button';
 
+.w-button {
+    //&:hover { border-color: $border-color-hover; }
+    //&:active { background-color: $button-active-bg; }
+    //&:focus { outline: none; }
+    > .w-button-content { order: 2; }
+    > .icon { order: 1; margin-right: .1em; }
+    &.icon-right {
+        > .w-button-content { order: 1; }
+        > .icon { order: 2; margin-right: 0; margin-left: .1em;}
+    }
+    .loading {
+        animation: spin 2s infinite linear;
+    }
+}
 @include b(button){
     display: inline-block;
     line-height:1;
@@ -17,24 +31,58 @@
     border: $--border-base;
     border-color: $--button-default-border-color;
     background: $--button-default-background-color;
-    @include button-size($--button-padding-vertical,$--button-padding-horizontal,$--button-font-size,$--border-radius-base)
+    @include button-size($--button-padding-vertical,$--button-padding-horizontal,$--button-font-size,$--border-radius-base);
+    &:hover,
+    &:focus {
+        color: $--color-primary;
+        border-color: $--color-primary-light-7;
+        background-color: $--color-primary-light-9;
+    }
+    
+    &:active {
+        color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
+        border-color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
+        outline: none;
+    }
+    @include when(plain){
+        &:hover,
+        &:focus {
+            background: $--color-white;
+            border-color: $--color-primary;
+            color: $--color-primary;
+        }
+        &:active {
+            background: $--color-white;
+            border-color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
+            color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
+            outline: none;
+        }
+    }
+    @include m(primary){
+        @include button-variant($--button-primary-font-color,$--button-primary-background-color,$--button-primary-border-color)
+    };
+    @include m(success){
+        @include button-variant($--button-success-font-color,$--button-success-background-color,$--button-success-border-color)
+    };
+    @include m(info){
+        @include button-variant($--button-info-font-color,$--button-info-background-color,$--button-info-border-color)
+    };
+    @include m(warning){
+        @include button-variant($--button-warning-font-color,$--button-warning-background-color,$--button-warning-border-color)
+    };
+    @include m(danger){
+        @include button-variant($--button-danger-font-color,$--button-danger-background-color,$--button-danger-border-color)
+    };
+    @include m(info){
+        @include button-variant($--button-info-font-color,$--button-info-background-color,$--button-info-border-color)
+    };
+
+
 };
+
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-.w-button {
-    //&:hover { border-color: $border-color-hover; }
-    //&:active { background-color: $button-active-bg; }
-    //&:focus { outline: none; }
-    > .w-button-content { order: 2; }
-    > .icon { order: 1; margin-right: .1em; }
-    &.icon-right {
-        > .w-button-content { order: 1; }
-        > .icon { order: 2; margin-right: 0; margin-left: .1em;}
-    }
-    .loading {
-        animation: spin 2s infinite linear;
-    }
-}
+
 

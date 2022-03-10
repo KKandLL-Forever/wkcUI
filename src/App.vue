@@ -86,10 +86,24 @@
   
   
     <div class="button-box">
-      <w-button icon="setting" :loading="loading1" @click="loading1 = !loading1" type="primary"></w-button>
-      <w-button :loading="loading1" @click="loading1 = !loading1" type="primary">
-        按钮
-      </w-button>
+      <w-button icon="setting"></w-button>
+      <div>
+        <w-button>默认按钮</w-button>
+        <w-button type="primary">主要按钮</w-button>
+        <w-button type="success">成功按钮</w-button>
+        <w-button type="info">信息按钮</w-button>
+        <w-button type="warning">警告按钮</w-button>
+        <w-button type="danger">危险按钮</w-button>
+      </div>
+      <div>
+        <w-button plain>默认按钮</w-button>
+        <w-button plain type="primary">主要按钮</w-button>
+        <w-button plain type="success">成功按钮</w-button>
+        <w-button plain type="info">信息按钮</w-button>
+        <w-button plain type="warning">警告按钮</w-button>
+        <w-button plain type="danger">危险按钮</w-button>
+      </div>
+      
       <w-button icon="setting" :loading="loading2" @click="loading2 = !loading2">
         按钮
       </w-button>
@@ -161,18 +175,9 @@ export default {
 
 <style scoped lang="scss">
 #app{
-  //position: relative;
-  //height:100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.button-box{
-  //position: absolute;
-  //top: 0;
-  //left: 0;
-  //bottom: 0;
-  //right: 0;
-  //margin: auto;
-}
+.button-box{}
 </style>

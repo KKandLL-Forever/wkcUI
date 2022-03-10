@@ -9,3 +9,32 @@
         @content;
     }
 }
+
+@mixin m($modifier) {
+    $selector: &; //这里 & 就代表父级选择器,想一想嵌套写法就明白了
+    $currentSelector: ""; //初始值
+    @each $unit in $modifier {
+        //生成形如: 'w-button--primary '的选择器
+        $currentSelector: #{$currentSelector + & + $modifier-separator + $unit + ","};
+    }
+    //不嵌套
+    @at-root {
+        //等价于
+        //.w-button--primary{}
+        #{$currentSelector} {
+            //插入的内容,和slot很像
+            @content;
+        }
+    }
+}
+
+//用来描述状态
+@mixin when($state) {
+    @at-root {
+        //生成形如
+        //&.is-plain
+        &.#{$state-prefix + $state} {
+            @content;
+        }
+    }
+}
