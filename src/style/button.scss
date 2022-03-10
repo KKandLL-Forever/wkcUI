@@ -26,6 +26,7 @@
     vertical-align: middle;
     margin: 0;
     transition: .1s;
+    fill:$--button-default-font-color;
     color: $--button-default-font-color;
     font-weight: $--button-font-weight;
     border: $--border-base;
@@ -35,12 +36,14 @@
     &:hover,
     &:focus {
         color: $--color-primary;
+        fill: $--color-primary;
         border-color: $--color-primary-light-7;
         background-color: $--color-primary-light-9;
     }
     
     &:active {
         color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
+        fill: mix($--color-black, $--color-primary, $--button-active-shade-percent);
         border-color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
         outline: none;
     }
@@ -50,14 +53,20 @@
             background: $--color-white;
             border-color: $--color-primary;
             color: $--color-primary;
+            fill: $--color-primary;
         }
         &:active {
             background: $--color-white;
             border-color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
             color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
+            fill: mix($--color-black, $--color-primary, $--button-active-shade-percent);
             outline: none;
         }
     }
+    @include when(circle){
+        border-radius: 50%;
+        padding: $--button-padding-vertical;
+    };
     @include m(primary){
         @include button-variant($--button-primary-font-color,$--button-primary-background-color,$--button-primary-border-color)
     };

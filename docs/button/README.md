@@ -45,3 +45,28 @@ BEM规则
 mix混合
 变量 `$variables`
 脚本模式 `#{xxx}`
+默认变量 `!default`
+```scss
+//1.default没被定义
+$abc: red !default;
+div {
+    background: $abc;
+}
+//在default之前已经定义过
+$abc: black;
+$abc: red !default;
+div {
+    background: $abc;
+}
+```
+编译
+```css
+/*1.*/
+div {
+    background: red;
+}
+/*2.*/
+div {
+  background: black;
+}
+```

@@ -2,6 +2,7 @@
 
 @mixin button-plain($color) {
     color: $color;
+    fill: $color;
     background: mix($--color-white, $color, 90%);
     border-color: mix($--color-white, $color, 60%);
     
@@ -10,12 +11,14 @@
         background: $color;
         border-color: $color;
         color: $--color-white;
+        fill: $--color-white;
     }
     
     &:active {
         background: mix($--color-black, $color, $--button-active-shade-percent);
         border-color: mix($--color-black, $color, $--button-active-shade-percent);
         color: $--color-white;
+        fill: $--color-white;
         outline: none;
     }
     
@@ -25,6 +28,7 @@
         &:focus,
         &:active {
             color: mix($--color-white, $color, 40%);
+            fill: mix($--color-white, $color, 40%);
             background-color: mix($--color-white, $color, 90%);
             border-color: mix($--color-white, $color, 80%);
         }
@@ -41,6 +45,7 @@
 }
 
 @mixin button-variant($color, $background-color, $border-color) {
+    fill: $color;
     color: $color;
     background-color: $background-color;
     border-color: $border-color;
@@ -50,12 +55,14 @@
         background: mix($--color-white, $background-color, $--button-hover-tint-percent);
         border-color: mix($--color-white, $border-color, $--button-hover-tint-percent);
         color: $color;
+        fill: $color;
     }
     
     &:active {
         background: mix($--color-black, $background-color, $--button-active-shade-percent);
         border-color: mix($--color-black, $border-color, $--button-active-shade-percent);
         color: $color;
+        fill: $color;
         outline: none;
     }
     

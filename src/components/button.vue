@@ -6,6 +6,7 @@
       `icon-${iconPosition}`,
       type ? `w-button--${type}` : '',
       plain ? `is-plain` : '',
+      circle ? `is-circle` : '',
       ]"
     @click="$emit('click')">
     <w-icon class="icon" v-if="icon && !loading" :name="icon"></w-icon>
@@ -48,6 +49,9 @@ export default {
     plain:{
       type: Boolean,
       default: false
+    },
+    circle: {
+      type: Boolean,
     }
   }
 }

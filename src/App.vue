@@ -88,20 +88,28 @@
     <div class="button-box">
       <w-button icon="setting"></w-button>
       <div>
-        <w-button>默认按钮</w-button>
-        <w-button type="primary">主要按钮</w-button>
-        <w-button type="success">成功按钮</w-button>
+        <w-button icon="setting">默认按钮</w-button>
+        <w-button type="primary" icon="setting">主要按钮</w-button>
+        <w-button type="success" icon="setting">成功按钮</w-button>
         <w-button type="info">信息按钮</w-button>
         <w-button type="warning">警告按钮</w-button>
         <w-button type="danger">危险按钮</w-button>
       </div>
       <div>
-        <w-button plain>默认按钮</w-button>
-        <w-button plain type="primary">主要按钮</w-button>
+        <w-button plain icon="setting">默认按钮</w-button>
+        <w-button plain type="primary" icon="setting">主要按钮</w-button>
         <w-button plain type="success">成功按钮</w-button>
         <w-button plain type="info">信息按钮</w-button>
         <w-button plain type="warning">警告按钮</w-button>
         <w-button plain type="danger">危险按钮</w-button>
+      </div>
+      <div>
+        <w-button circle icon="setting"></w-button>
+        <w-button circle type="primary" icon="setting"></w-button>
+        <w-button circle type="success" icon="setting"></w-button>
+        <w-button circle type="info" icon="setting"></w-button>
+        <w-button circle type="warning" icon="setting"></w-button>
+        <w-button circle type="danger" icon="setting"></w-button>
       </div>
       
       <w-button icon="setting" :loading="loading2" @click="loading2 = !loading2">
