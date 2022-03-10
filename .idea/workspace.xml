@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63f8d7a5-52fa-4832-a596-6bc77878803a" name="Default Changelist" comment="feat: 修复icon颜色不跟随状态变化的bug">
+    <list default="true" id="63f8d7a5-52fa-4832-a596-6bc77878803a" name="Default Changelist" comment="feat: disabled状态样式">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/mixins/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/mixins/_button.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -341,14 +339,7 @@
       <workItem from="1621090760208" duration="1222000" />
       <workItem from="1621823413298" duration="318000" />
       <workItem from="1646665415509" duration="11499000" />
-      <workItem from="1646744456844" duration="28668000" />
-    </task>
-    <task id="LOCAL-00029" summary="重构Row和Col">
-      <created>1593006792987</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1593006792987</updated>
+      <workItem from="1646744456844" duration="32360000" />
     </task>
     <task id="LOCAL-00030" summary="添加Row的align=left right center属性">
       <created>1593008245846</created>
@@ -686,7 +677,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646923020863</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="feat: disabled状态样式">
+      <created>1646924232226</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1646924232226</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -760,7 +758,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="tab标签切换功能基本完成" />
     <MESSAGE value="tab标签几个小的css样式修改" />
     <MESSAGE value="tab标签实现disabled功能" />
     <MESSAGE value="disabled状态下,cursor不能选中" />
@@ -785,7 +782,8 @@
     <MESSAGE value="feat: 修复icon无法和文字居中对齐的bug(不使用display:flex)" />
     <MESSAGE value="feat: when=plain时的样式调整" />
     <MESSAGE value="feat: 修复icon颜色不跟随状态变化的bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 修复icon颜色不跟随状态变化的bug" />
+    <MESSAGE value="feat: disabled状态样式" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: disabled状态样式" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -136,18 +136,39 @@
         <w-button disabled plain type="danger">危险按钮</w-button>
       </div>
       <br>
-      
-      <w-button icon="setting" :loading="loading2" @click="loading2 = !loading2">
-        按钮
-      </w-button>
-      <w-button icon="setting" :loading="loading3" @click="loading3 = !loading3" icon-position="right">
-        按钮
-      </w-button>
-      <w-button-group>
-        <w-button icon="left">上一页</w-button>
-        <w-button>更多</w-button>
-        <w-button icon="right" icon-position="right">下一页</w-button>
-      </w-button-group>
+<!--      文字样式-->
+      <div>
+        <w-button type="text">文字按钮</w-button>
+        <w-button disabled type="text">文字按钮</w-button>
+      </div>
+      <br>
+<!--      图标按钮-->
+      <div>
+        <w-button icon="setting"></w-button>
+        <w-button icon="like"></w-button>
+        <w-button icon="info-circle"></w-button>
+        <w-button icon="bofangqi">播放器</w-button>
+        <w-button>点赞<w-icon name="like"></w-icon></w-button>
+      </div>
+      <br>
+<!--      Loading状态-->
+      <div>
+        <w-button icon="setting" :loading="loading2" @click="loading2 = !loading2">
+          按钮
+        </w-button>
+        <w-button icon="setting" :loading="loading3" @click="loading3 = !loading3" icon-position="right">
+          按钮
+        </w-button>
+      </div>
+      <br>
+<!--      按钮组-->
+      <div>
+        <w-button-group>
+          <w-button type="primary" icon="left">上一页</w-button>
+          <w-button type="primary">更多</w-button>
+          <w-button type="primary">下一页 <w-icon name="right"></w-icon></w-button>
+        </w-button-group>
+      </div>
     </div>
     
     
