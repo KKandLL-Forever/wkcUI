@@ -17,6 +17,7 @@
     }
 }
 @include b(button){
+    //以下样式为基础样式,primary等变种样式在 @include m()中设置
     display: inline-block;
     line-height:1;
     box-sizing: border-box;
@@ -66,6 +67,18 @@
     @include when(circle){
         border-radius: 50%;
         padding: $--button-padding-vertical;
+    };
+    @include when(disabled){
+        &,
+        &:hover,
+        &:focus {
+            color: $--button-disabled-font-color;
+            fill: $--button-disabled-font-color;
+            cursor: not-allowed;
+            background-image: none;
+            background-color: $--button-disabled-background-color;
+            border-color: $--button-disabled-border-color;
+        }
     };
     @include m(primary){
         @include button-variant($--button-primary-font-color,$--button-primary-background-color,$--button-primary-border-color)

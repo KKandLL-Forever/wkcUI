@@ -1,6 +1,7 @@
 @import '../common/var';
 
 @mixin button-plain($color) {
+    //plain状态的样式
     color: $color;
     fill: $color;
     background: mix($--color-white, $color, 90%);
@@ -64,6 +65,16 @@
         color: $color;
         fill: $color;
         outline: none;
+    }
+    &.is-disabled {
+        &,
+        &:hover,
+        &:focus,
+        &:active {
+            color: $--color-white;
+            background-color: mix($background-color, $--color-white);
+            border-color: mix($border-color, $--color-white);
+        }
     }
     
     &.is-plain {

@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63f8d7a5-52fa-4832-a596-6bc77878803a" name="Default Changelist" comment="feat: when=plain时的样式调整">
+    <list default="true" id="63f8d7a5-52fa-4832-a596-6bc77878803a" name="Default Changelist" comment="feat: 修复icon颜色不跟随状态变化的bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/button/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/button/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/button.scss" afterDir="false" />
@@ -342,14 +341,7 @@
       <workItem from="1621090760208" duration="1222000" />
       <workItem from="1621823413298" duration="318000" />
       <workItem from="1646665415509" duration="11499000" />
-      <workItem from="1646744456844" duration="27536000" />
-    </task>
-    <task id="LOCAL-00028" summary="Row和Col的gutter(自由间隙)基本完成">
-      <created>1592905431735</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1592905431735</updated>
+      <workItem from="1646744456844" duration="28668000" />
     </task>
     <task id="LOCAL-00029" summary="重构Row和Col">
       <created>1593006792987</created>
@@ -687,7 +679,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646877932127</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="feat: 修复icon颜色不跟随状态变化的bug">
+      <created>1646923020863</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1646923020863</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -761,7 +760,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="tab标签交互区域扩大" />
     <MESSAGE value="tab标签切换功能基本完成" />
     <MESSAGE value="tab标签几个小的css样式修改" />
     <MESSAGE value="tab标签实现disabled功能" />
@@ -786,7 +784,8 @@
     <MESSAGE value="feat: 理解elementUi对样式的设计;更新playground样式" />
     <MESSAGE value="feat: 修复icon无法和文字居中对齐的bug(不使用display:flex)" />
     <MESSAGE value="feat: when=plain时的样式调整" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: when=plain时的样式调整" />
+    <MESSAGE value="feat: 修复icon颜色不跟随状态变化的bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 修复icon颜色不跟随状态变化的bug" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

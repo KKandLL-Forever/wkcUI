@@ -7,6 +7,7 @@
       type ? `w-button--${type}` : '',
       plain ? `is-plain` : '',
       circle ? `is-circle` : '',
+      disabled ? `is-disabled` : '',
       ]"
     @click="$emit('click')">
     <w-icon class="icon" v-if="icon && !loading" :name="icon"></w-icon>
@@ -28,10 +29,7 @@ export default {
   // props:['icon','iconPosition']
   props: {
     icon: {},
-    loading: {
-      type: Boolean,
-      default: false
-    },
+    loading: Boolean,
     iconPosition: {
       type: String,
       default: 'left',
@@ -46,13 +44,9 @@ export default {
         return value === 'default' || value === 'primary' || value === 'danger' || value === 'success' || value === 'info' || value === 'warning'
       }
     },
-    plain:{
-      type: Boolean,
-      default: false
-    },
-    circle: {
-      type: Boolean,
-    }
+    plain:Boolean,
+    circle: Boolean,
+    disabled: Boolean,
   }
 }
 </script>
