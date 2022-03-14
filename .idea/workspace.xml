@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63f8d7a5-52fa-4832-a596-6bc77878803a" name="Default Changelist" comment="feat: readme">
+    <list default="true" id="63f8d7a5-52fa-4832-a596-6bc77878803a" name="Default Changelist" comment="feat: 开发小记更新">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/button/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/button/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/button-vp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/button-vp.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -339,14 +339,8 @@
       <workItem from="1621823413298" duration="318000" />
       <workItem from="1646665415509" duration="11499000" />
       <workItem from="1646744456844" duration="32360000" />
-      <workItem from="1646955768052" duration="1261000" />
-    </task>
-    <task id="LOCAL-00032" summary="重构">
-      <created>1594213413023</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1594213413023</updated>
+      <workItem from="1646955768052" duration="1725000" />
+      <workItem from="1647272554115" duration="336000" />
     </task>
     <task id="LOCAL-00033" summary="row测试用例">
       <created>1594321213861</created>
@@ -684,7 +678,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646956108519</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="feat: 开发小记更新">
+      <created>1646961968709</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1646961968709</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -758,7 +759,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="disabled状态下,cursor不能选中" />
     <MESSAGE value="tabs部分代码防御性编程" />
     <MESSAGE value="vuePress更新button展示页面" />
     <MESSAGE value="vuePress更新Grid展示页面" />
@@ -783,7 +783,8 @@
     <MESSAGE value="feat: disabled状态样式" />
     <MESSAGE value="feat: text状态样式" />
     <MESSAGE value="feat: readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: readme" />
+    <MESSAGE value="feat: 开发小记更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 开发小记更新" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
