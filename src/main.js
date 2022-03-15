@@ -1,7 +1,7 @@
 import Vue from "vue";
 import App from "./App.vue";
 
-import Button from './components/button'
+import Button from './components/Button'
 import Icon from './components/icon'
 import ButtonGroup from './components/button-group'
 import Input from './components/input'
@@ -19,6 +19,9 @@ import Sider from './components/sider'
 // import TabsContent from './tabs-content'
 // import TabsItem from './tabs-item'
 // import TabsBody from './tabs-body'
+import NavMenu from './components/NavMenu'
+import MenuItem from './components/MenuItem'
+import SubMenu from './components/SubMenu'
 
 // Vue.use(plugin)
 Vue.component('w-button', Button)
@@ -38,6 +41,9 @@ Vue.component('w-sider', Sider)
 // Vue.component('w-tabs-head', TabsHead)
 // Vue.component('w-tabs-item', TabsItem)
 // Vue.component('w-tabs-body', TabsBody)
+Vue.component('w-menu', NavMenu)
+Vue.component('w-submenu', SubMenu)
+Vue.component('w-menu-item', MenuItem)
 
 Vue.config.productionTip = false;
 

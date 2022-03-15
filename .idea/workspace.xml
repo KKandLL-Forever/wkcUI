@@ -4,9 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63f8d7a5-52fa-4832-a596-6bc77878803a" name="Default Changelist" comment="feat: 开发小记更新">
+    <list default="true" id="63f8d7a5-52fa-4832-a596-6bc77878803a" name="Default Changelist" comment="feat: vuepress-button更新">
+      <change afterPath="$PROJECT_DIR$/src/components/MenuItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NavMenu.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SubMenu.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/NavMenu.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/button-vp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/button-vp.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/grid-vp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/grid-vp.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/tabs-vp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/tabs-vp.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/toast-vp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/toast-vp.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/button.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/button.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +87,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/components/button.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/Button.vue" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/package.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -278,8 +289,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.docs:dev" />
         <item itemvalue="npm.serve" />
+        <item itemvalue="npm.docs:dev" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
         <item itemvalue="JavaScript 调试.localhost:1234" />
@@ -340,14 +351,8 @@
       <workItem from="1646665415509" duration="11499000" />
       <workItem from="1646744456844" duration="32360000" />
       <workItem from="1646955768052" duration="1725000" />
-      <workItem from="1647272554115" duration="336000" />
-    </task>
-    <task id="LOCAL-00033" summary="row测试用例">
-      <created>1594321213861</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1594321213861</updated>
+      <workItem from="1647272554115" duration="686000" />
+      <workItem from="1647330120822" duration="5102000" />
     </task>
     <task id="LOCAL-00034" summary="col测试用例">
       <created>1594818347892</created>
@@ -685,7 +690,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646961968709</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="feat: vuepress-button更新">
+      <created>1647273167272</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1647273167272</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -759,7 +771,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="tabs部分代码防御性编程" />
     <MESSAGE value="vuePress更新button展示页面" />
     <MESSAGE value="vuePress更新Grid展示页面" />
     <MESSAGE value="vuePress更新Input展示页面" />
@@ -784,7 +795,8 @@
     <MESSAGE value="feat: text状态样式" />
     <MESSAGE value="feat: readme" />
     <MESSAGE value="feat: 开发小记更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 开发小记更新" />
+    <MESSAGE value="feat: vuepress-button更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: vuepress-button更新" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

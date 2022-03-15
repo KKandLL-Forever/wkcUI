@@ -31,7 +31,7 @@
   import Vue from 'vue'
   import Toast from '../../../src/toast'
   import plugin from '../../../src/plugin'
-  import Button from '../../../src/components/button'
+  import Button from '@/components/Button'
   import Icon from '../../../src/components/icon'
   import VueHighlightJS from 'vue-highlightjs';
   import 'highlight.js/styles/atom-one-light.css';

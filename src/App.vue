@@ -85,93 +85,93 @@
   
   
   
-    <div class="button-box">
-      <w-button icon="setting"></w-button>
-<!--      默认按钮-->
-      <div>
-        <w-button icon="setting">默认按钮</w-button>
-        <w-button type="primary" icon="setting">主要按钮</w-button>
-        <w-button type="success" icon="setting">成功按钮</w-button>
-        <w-button type="info">信息按钮</w-button>
-        <w-button type="warning">警告按钮</w-button>
-        <w-button type="danger">危险按钮</w-button>
-      </div>
-      <br>
-<!--      朴素按钮-->
-      <div>
-        <w-button plain icon="setting">默认按钮</w-button>
-        <w-button plain type="primary" icon="setting">主要按钮</w-button>
-        <w-button plain type="success">成功按钮</w-button>
-        <w-button plain type="info">信息按钮</w-button>
-        <w-button plain type="warning">警告按钮</w-button>
-        <w-button plain type="danger">危险按钮</w-button>
-      </div>
-      <br>
-<!--      圆形按钮-->
-      <div>
-        <w-button circle icon="setting"></w-button>
-        <w-button circle type="primary" icon="setting"></w-button>
-        <w-button circle type="success" icon="setting"></w-button>
-        <w-button circle type="info" icon="setting"></w-button>
-        <w-button circle type="warning" icon="setting"></w-button>
-        <w-button circle type="danger" icon="setting"></w-button>
-      </div>
-      <br>
-<!--      disabled状态-->
-      <div>
-        <w-button disabled icon="setting" >默认按钮</w-button>
-        <w-button disabled type="primary" icon="setting">主要按钮</w-button>
-        <w-button disabled type="success" icon="setting">成功按钮</w-button>
-        <w-button disabled type="info">信息按钮</w-button>
-        <w-button disabled type="warning">警告按钮</w-button>
-        <w-button disabled type="danger">危险按钮</w-button>
-      </div>
-      <br>
-      <div>
-        <w-button disabled plain icon="setting">默认按钮</w-button>
-        <w-button disabled plain type="primary" icon="setting">主要按钮</w-button>
-        <w-button disabled plain type="success">成功按钮</w-button>
-        <w-button disabled plain type="info">信息按钮</w-button>
-        <w-button disabled plain type="warning">警告按钮</w-button>
-        <w-button disabled plain type="danger">危险按钮</w-button>
-      </div>
-      <br>
-<!--      文字样式-->
-      <div>
-        <w-button type="text">文字按钮</w-button>
-        <w-button disabled type="text">文字按钮</w-button>
-      </div>
-      <br>
-<!--      图标按钮-->
-      <div>
-        <w-button icon="setting"></w-button>
-        <w-button icon="like"></w-button>
-        <w-button icon="info-circle"></w-button>
-        <w-button icon="bofangqi">播放器</w-button>
-        <w-button>点赞<w-icon name="like"></w-icon></w-button>
-      </div>
-      <br>
-<!--      Loading状态-->
-      <div>
-        <w-button icon="setting" :loading="loading2" @click="loading2 = !loading2">
-          按钮
-        </w-button>
-        <w-button icon="setting" :loading="loading3" @click="loading3 = !loading3" icon-position="right">
-          按钮
-        </w-button>
-      </div>
-      <br>
-<!--      按钮组-->
-      <div>
-        <w-button-group>
-          <w-button type="primary" icon="left">上一页</w-button>
-          <w-button type="primary">更多</w-button>
-          <w-button type="primary">下一页 <w-icon name="right"></w-icon></w-button>
-        </w-button-group>
-      </div>
-    </div>
-    
-    
+<!--    <div class="button-box">-->
+<!--      <w-button icon="setting"></w-button>-->
+<!--&lt;!&ndash;      默认按钮&ndash;&gt;-->
+<!--      <div>-->
+<!--        <w-button icon="setting">默认按钮</w-button>-->
+<!--        <w-button type="primary" icon="setting">主要按钮</w-button>-->
+<!--        <w-button type="success" icon="setting">成功按钮</w-button>-->
+<!--        <w-button type="info">信息按钮</w-button>-->
+<!--        <w-button type="warning">警告按钮</w-button>-->
+<!--        <w-button type="danger">危险按钮</w-button>-->
+<!--      </div>-->
+<!--      <br>-->
+<!--&lt;!&ndash;      朴素按钮&ndash;&gt;-->
+<!--      <div>-->
+<!--        <w-button plain icon="setting">默认按钮</w-button>-->
+<!--        <w-button plain type="primary" icon="setting">主要按钮</w-button>-->
+<!--        <w-button plain type="success">成功按钮</w-button>-->
+<!--        <w-button plain type="info">信息按钮</w-button>-->
+<!--        <w-button plain type="warning">警告按钮</w-button>-->
+<!--        <w-button plain type="danger">危险按钮</w-button>-->
+<!--      </div>-->
+<!--      <br>-->
+<!--&lt;!&ndash;      圆形按钮&ndash;&gt;-->
+<!--      <div>-->
+<!--        <w-button circle icon="setting"></w-button>-->
+<!--        <w-button circle type="primary" icon="setting"></w-button>-->
+<!--        <w-button circle type="success" icon="setting"></w-button>-->
+<!--        <w-button circle type="info" icon="setting"></w-button>-->
+<!--        <w-button circle type="warning" icon="setting"></w-button>-->
+<!--        <w-button circle type="danger" icon="setting"></w-button>-->
+<!--      </div>-->
+<!--      <br>-->
+<!--&lt;!&ndash;      disabled状态&ndash;&gt;-->
+<!--      <div>-->
+<!--        <w-button disabled icon="setting" >默认按钮</w-button>-->
+<!--        <w-button disabled type="primary" icon="setting">主要按钮</w-button>-->
+<!--        <w-button disabled type="success" icon="setting">成功按钮</w-button>-->
+<!--        <w-button disabled type="info">信息按钮</w-button>-->
+<!--        <w-button disabled type="warning">警告按钮</w-button>-->
+<!--        <w-button disabled type="danger">危险按钮</w-button>-->
+<!--      </div>-->
+<!--      <br>-->
+<!--      <div>-->
+<!--        <w-button disabled plain icon="setting">默认按钮</w-button>-->
+<!--        <w-button disabled plain type="primary" icon="setting">主要按钮</w-button>-->
+<!--        <w-button disabled plain type="success">成功按钮</w-button>-->
+<!--        <w-button disabled plain type="info">信息按钮</w-button>-->
+<!--        <w-button disabled plain type="warning">警告按钮</w-button>-->
+<!--        <w-button disabled plain type="danger">危险按钮</w-button>-->
+<!--      </div>-->
+<!--      <br>-->
+<!--&lt;!&ndash;      文字样式&ndash;&gt;-->
+<!--      <div>-->
+<!--        <w-button type="text">文字按钮</w-button>-->
+<!--        <w-button disabled type="text">文字按钮</w-button>-->
+<!--      </div>-->
+<!--      <br>-->
+<!--&lt;!&ndash;      图标按钮&ndash;&gt;-->
+<!--      <div>-->
+<!--        <w-button icon="setting"></w-button>-->
+<!--        <w-button icon="like"></w-button>-->
+<!--        <w-button icon="info-circle"></w-button>-->
+<!--        <w-button icon="bofangqi">播放器</w-button>-->
+<!--        <w-button>点赞<w-icon name="like"></w-icon></w-button>-->
+<!--      </div>-->
+<!--      <br>-->
+<!--&lt;!&ndash;      Loading状态&ndash;&gt;-->
+<!--      <div>-->
+<!--        <w-button icon="setting" :loading="loading2" @click="loading2 = !loading2">-->
+<!--          按钮-->
+<!--        </w-button>-->
+<!--        <w-button icon="setting" :loading="loading3" @click="loading3 = !loading3" icon-position="right">-->
+<!--          按钮-->
+<!--        </w-button>-->
+<!--      </div>-->
+<!--      <br>-->
+<!--&lt;!&ndash;      按钮组&ndash;&gt;-->
+<!--      <div>-->
+<!--        <w-button-group>-->
+<!--          <w-button type="primary" icon="left">上一页</w-button>-->
+<!--          <w-button type="primary">更多</w-button>-->
+<!--          <w-button type="primary">下一页 <w-icon name="right"></w-icon></w-button>-->
+<!--        </w-button-group>-->
+<!--      </div>-->
+<!--    </div>-->
+
+
 <!--    <div class="box">-->
 <!--      <w-input value="李四" disabled></w-input>-->
 <!--      <w-input value="张三" readonly></w-input>-->
@@ -185,6 +185,16 @@
 <!--    <div class="box">-->
 <!--      <w-input value="王" error="姓名不能少于两个字"></w-input>-->
 <!--    </div>-->
+  
+    <w-menu>
+      <w-menu-item index="1">处理中心</w-menu-item>
+      <w-submenu index="2">
+        <template v-slot="title">控制中心</template>
+      </w-submenu>
+      <w-menu-item index="3">消息中心</w-menu-item>
+      <w-menu-item index="4">订单管理</w-menu-item>
+    </w-menu>
+
 
   </div>
 </template>
