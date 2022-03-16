@@ -1,5 +1,8 @@
 <template>
-  <div class="w-menu-item" @click="handleClick">
+  <div
+    class="w-menu-item"
+    :class="[isSelected?'is-selected':'']"
+    @click="handleClick">
     <slot></slot>
   </div>
 </template>
@@ -8,20 +11,24 @@
 export default {
   name: "MenuItem",
   props: {
-    index: String
+    name: {
+      type:String,
+      require: true
+    },
   },
   computed:{
   },
   data() {
    return {
+     isSelected: false
    }
   },
   mounted(){
   },
   methods:{
     handleClick(){
-      this.$emit('click:menu-item',this.index)
-      console.log(this.index,'menu-item index')
+      this.$emit('stateChange:selected')
+      // console.log(this.index,'menu-item index')
     },
   }
 }

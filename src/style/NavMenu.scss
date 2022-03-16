@@ -4,11 +4,12 @@
 
 @include b(menu){
     border: 1px solid blue;
-    //
+    //上面是临时的
     display:flex;
     justify-content:center;
     align-items:center;
     cursor: pointer;
+
 }
 @include b(submenu){
     padding: 0 20px;
@@ -19,4 +20,9 @@
     line-height:56px;
     padding: 0 20px;
     cursor: pointer;
+    @include when(selected){
+        background: $--color-primary;
+    }
 }
+
+

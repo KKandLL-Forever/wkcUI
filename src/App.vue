@@ -186,13 +186,13 @@
 <!--      <w-input value="王" error="姓名不能少于两个字"></w-input>-->
 <!--    </div>-->
   
-    <w-menu>
-      <w-menu-item index="1">处理中心</w-menu-item>
-      <w-submenu index="2">
-        <template v-slot="title">控制中心</template>
+    <w-menu :current="activeIndex" :multiple="false">
+      <w-menu-item name="center">处理中心</w-menu-item>
+      <w-submenu>
+        <template v-slot:title>控制中心</template>
       </w-submenu>
-      <w-menu-item index="3">消息中心</w-menu-item>
-      <w-menu-item index="4">订单管理</w-menu-item>
+      <w-menu-item name="message">消息中心</w-menu-item>
+      <w-menu-item name="order">订单管理</w-menu-item>
     </w-menu>
 
 
@@ -207,9 +207,10 @@ export default {
       loading1: false,
       loading2: true,
       loading3: false,
-  
       message: '',
       defaultSelectedTab: 'tab2',
+      // menu
+      activeIndex: ['center']
     }
   },
   methods:{
