@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63f8d7a5-52fa-4832-a596-6bc77878803a" name="Default Changelist" comment="feat: NavMenu基础">
-      <change afterPath="$PROJECT_DIR$/docs/nav-menu/README.md" afterDir="false" />
+    <list default="true" id="63f8d7a5-52fa-4832-a596-6bc77878803a" name="Default Changelist" comment="feat: NavMenu默认选中">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MenuItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MenuItem.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NavMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavMenu.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/NavMenu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/NavMenu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SubMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SubMenu.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,8 +81,17 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/style/NavMenu.scss" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/style/button.scss" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/style/common/var.scss" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/components/Button.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/SubMenu.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/style/mixins/config.scss" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/MenuItem.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/style/mixins/mixins.scss" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/package.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/App.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/NavMenu.vue" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -347,14 +357,7 @@
       <workItem from="1647272554115" duration="686000" />
       <workItem from="1647330120822" duration="7067000" />
       <workItem from="1647398025598" duration="1662000" />
-      <workItem from="1647443411331" duration="2060000" />
-    </task>
-    <task id="LOCAL-00035" summary="布局组件 基本完成">
-      <created>1595197238623</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1595197238623</updated>
+      <workItem from="1647443411331" duration="6646000" />
     </task>
     <task id="LOCAL-00036" summary="引入vuepress,初步配置">
       <created>1595297048620</created>
@@ -692,7 +695,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647335726990</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="feat: NavMenu默认选中">
+      <created>1647445904474</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1647445904474</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -766,7 +776,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="vuePress更新Grid展示页面" />
     <MESSAGE value="vuePress更新Input展示页面" />
     <MESSAGE value="vuePress更新Layout展示页面" />
     <MESSAGE value="vuePress更新Toast展示页面" />
@@ -791,7 +800,8 @@
     <MESSAGE value="feat: 开发小记更新" />
     <MESSAGE value="feat: vuepress-button更新" />
     <MESSAGE value="feat: NavMenu基础" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: NavMenu基础" />
+    <MESSAGE value="feat: NavMenu默认选中" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: NavMenu默认选中" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

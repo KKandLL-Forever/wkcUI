@@ -11,7 +11,7 @@
 export default {
   name: "MenuItem",
   props: {
-    name: {
+    menuName: {
       type:String,
       require: true
     },
@@ -23,12 +23,13 @@ export default {
      isSelected: false
    }
   },
+  watch: {
+  },
   mounted(){
   },
   methods:{
     handleClick(){
-      this.$emit('stateChange:selected')
-      // console.log(this.index,'menu-item index')
+      this.$emit('change:selected',this.menuName)
     },
   }
 }

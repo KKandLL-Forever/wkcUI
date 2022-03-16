@@ -186,13 +186,13 @@
 <!--      <w-input value="王" error="姓名不能少于两个字"></w-input>-->
 <!--    </div>-->
   
-    <w-menu :current="activeIndex" :multiple="false">
-      <w-menu-item name="center">处理中心</w-menu-item>
+    <w-menu :current.sync="activeIndex" :multiple="false">
+      <w-menu-item menuName="center">处理中心</w-menu-item>
       <w-submenu>
         <template v-slot:title>控制中心</template>
       </w-submenu>
-      <w-menu-item name="message">消息中心</w-menu-item>
-      <w-menu-item name="order">订单管理</w-menu-item>
+      <w-menu-item menuName="message">消息中心</w-menu-item>
+      <w-menu-item menuName="order">订单管理</w-menu-item>
     </w-menu>
 
 

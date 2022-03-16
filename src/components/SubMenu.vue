@@ -1,7 +1,6 @@
 <template>
   <div
     class="w-submenu"
-    @click="handleClick"
   >
     <slot name="title"></slot>
     <slot name="default"></slot>
@@ -25,10 +24,10 @@ export default {
   mounted(){
   },
   methods:{
-    handleClick(){
-      this.$emit('click:submenu',this.index)
-      console.log(this.index,'submenu index')
-    },
+    // handleClick(){
+    //   this.$emit('click:submenu',this.index)
+    //   console.log(this.index,'submenu index')
+    // },
   }
 }
 </script>
