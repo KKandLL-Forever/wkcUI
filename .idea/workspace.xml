@@ -4,21 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63f8d7a5-52fa-4832-a596-6bc77878803a" name="Default Changelist" comment="feat: NavMenu整理下代码">
-      <change afterPath="$PROJECT_DIR$/src/style/mixins/functions.scss" afterDir="false" />
+    <list default="true" id="63f8d7a5-52fa-4832-a596-6bc77878803a" name="Default Changelist" comment="feat: NavMenu使用provide/inject">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/grid-vp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/grid-vp.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/tabs-vp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/tabs-vp.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/toast-vp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/toast-vp.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/nav-menu/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/nav-menu/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MenuItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MenuItem.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NavMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavMenu.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SubMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SubMenu.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/NavMenu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/NavMenu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/mixins/functions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/mixins/functions.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/mixins/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/mixins/mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/button.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/button.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,10 +293,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.docs:dev" />
-        <item itemvalue="npm.serve" />
-        <item itemvalue="npm.start" />
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.serve" />
+        <item itemvalue="npm.docs:dev" />
+        <item itemvalue="npm.start" />
         <item itemvalue="JavaScript 调试.localhost:1234" />
       </list>
     </recent_temporary>
@@ -364,21 +358,7 @@
       <workItem from="1647272554115" duration="686000" />
       <workItem from="1647330120822" duration="7067000" />
       <workItem from="1647398025598" duration="1662000" />
-      <workItem from="1647443411331" duration="12651000" />
-    </task>
-    <task id="LOCAL-00038" summary="修改vuepress的button文档(code换号,回车不正确)">
-      <created>1595371175756</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1595371175756</updated>
-    </task>
-    <task id="LOCAL-00039" summary="toast组件初步创建">
-      <created>1595377057277</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1595377057277</updated>
+      <workItem from="1647443411331" duration="20929000" />
     </task>
     <task id="LOCAL-00040" summary="toast组件新功能:自动关闭,关闭按钮,多行文字">
       <created>1595450754204</created>
@@ -709,7 +689,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647474708132</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="feat: NavMenu更新笔记">
+      <created>1647518382456</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1647518382456</updated>
+    </task>
+    <task id="LOCAL-00088" summary="feat: NavMenu使用provide/inject">
+      <created>1647518418838</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1647518418838</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -783,8 +777,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="vuePress更新Toast展示页面" />
-    <MESSAGE value="vuePress更新Tabs展示页面,并修复tabsLine的left计算逻辑" />
     <MESSAGE value="vuePress更新Layout配色,去掉p标签;去掉md文档中的'使用方法'" />
     <MESSAGE value="vuePress更改各组件 pre的highlight样式" />
     <MESSAGE value="vuePress更改button各h2标题增加图标;增加api说明" />
@@ -808,7 +800,9 @@
     <MESSAGE value="feat: NavMenu默认选中" />
     <MESSAGE value="feat: NavMenu切换标签" />
     <MESSAGE value="feat: NavMenu整理下代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: NavMenu整理下代码" />
+    <MESSAGE value="feat: NavMenu更新笔记" />
+    <MESSAGE value="feat: NavMenu使用provide/inject" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: NavMenu使用provide/inject" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

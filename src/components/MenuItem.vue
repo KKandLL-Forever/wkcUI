@@ -30,7 +30,7 @@ export default {
     this.rootMenu.collectChild(this)
   },
   mounted(){
-    console.log(this.rootMenu)
+    // console.log(this.rootMenu)
   },
   methods:{
     handleClick(){

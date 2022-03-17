@@ -23,12 +23,7 @@ export default {
       default: false
     }
   },
-  computed:{
-    // menuItems(){
-    //   //确定所有的子节点
-    //   return this.$children.filter(child => child.$options.name === 'MenuItem')
-    // }
-  },
+  computed:{ },
   data() {
    return {
      child: [],

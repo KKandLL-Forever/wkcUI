@@ -193,11 +193,24 @@
         <w-menu-item menuName="control1">控制1</w-menu-item>
         <w-menu-item menuName="control2">控制2</w-menu-item>
         <w-menu-item menuName="control3">控制3</w-menu-item>
+        <w-submenu>
+          <template v-slot:title>控制4</template>
+          <w-menu-item menuName="control1-1">控制1-1</w-menu-item>
+          <w-menu-item menuName="control2-2">控制2-2</w-menu-item>
+          <w-menu-item menuName="control3-3">控制3-3</w-menu-item>
+        </w-submenu>
       </w-submenu>
       <w-menu-item menuName="message">消息中心</w-menu-item>
       <w-menu-item menuName="order">订单管理</w-menu-item>
     </w-menu>
 
+<!--    <div class="test">-->
+<!--      123-->
+<!--      <div class="is-test">567</div>-->
+<!--      <div>-->
+<!--        345-->
+<!--      </div>-->
+<!--    </div>-->
 
   </div>
 </template>
@@ -247,5 +260,16 @@ export default {
   justify-content: center;
   align-items: center;
 }
+//.test{
+//  height: 300px;
+//}
+////.is-test{
+////  border: 1px solid blue;
+////}
+//.test .is-test{
+//  height: 200px;
+//  width: 200px;
+//  border: 1px solid green;
+//}
 .button-box{}
 </style>
