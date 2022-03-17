@@ -33,7 +33,8 @@ module.exports = {
         title: '开发小记',
         collapsable: false,
         children: [
-          '/button/'
+          '/button/',
+          '/nav-menu/'
         ]
       },
     ],

@@ -2,6 +2,16 @@
 @import './mixins/mixins';
 //@import './mixins/button';
 
+@mixin menu-item {
+    height: 56px;
+    line-height:56px;
+    padding: 0 20px;
+    cursor: pointer;
+    @include when(selected){
+        background: $--color-primary;
+    }
+}
+
 @include b(menu){
     border: 1px solid blue;
     //上面是临时的
@@ -14,15 +24,10 @@
 @include b(submenu){
     padding: 0 20px;
     cursor: pointer;
+    @include menu-item
 }
 @include b(menu-item){
-    height: 56px;
-    line-height:56px;
-    padding: 0 20px;
-    cursor: pointer;
-    @include when(selected){
-        background: $--color-primary;
-    }
+    @include menu-item
 }
 
 

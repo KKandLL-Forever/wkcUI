@@ -190,6 +190,9 @@
       <w-menu-item menuName="center">处理中心</w-menu-item>
       <w-submenu>
         <template v-slot:title>控制中心</template>
+        <w-menu-item menuName="control1">控制1</w-menu-item>
+        <w-menu-item menuName="control2">控制2</w-menu-item>
+        <w-menu-item menuName="control3">控制3</w-menu-item>
       </w-submenu>
       <w-menu-item menuName="message">消息中心</w-menu-item>
       <w-menu-item menuName="order">订单管理</w-menu-item>

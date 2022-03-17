@@ -2,8 +2,12 @@
   <div
     class="w-submenu"
   >
-    <slot name="title"></slot>
-    <slot name="default"></slot>
+    <div class="w-submenu__title">
+      <slot name="title"></slot>
+    </div>
+    <div>
+      <slot name="default"></slot>
+    </div>
   </div>
 </template>
 

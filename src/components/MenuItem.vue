@@ -10,6 +10,7 @@
 <script>
 export default {
   name: "MenuItem",
+  inject:['rootMenu'],
   props: {
     menuName: {
       type:String,
@@ -25,7 +26,11 @@ export default {
   },
   watch: {
   },
+  created() {
+    this.rootMenu.collectChild(this)
+  },
   mounted(){
+    console.log(this.rootMenu)
   },
   methods:{
     handleClick(){

@@ -8,6 +8,11 @@
 <script>
 export default {
   name: "NavMenu",
+  provide(){
+    return {
+      rootMenu: this
+    }
+  },
   props: {
     current: {
       type: Array,
@@ -19,13 +24,14 @@ export default {
     }
   },
   computed:{
-    menuItems(){
-      //确定所有的子节点
-      return this.$children.filter(child => child.$options.name === 'MenuItem')
-    }
+    // menuItems(){
+    //   //确定所有的子节点
+    //   return this.$children.filter(child => child.$options.name === 'MenuItem')
+    // }
   },
   data() {
    return {
+     child: [],
    }
   },
   mounted(){
@@ -33,17 +39,18 @@ export default {
     // console.log(this.menuItems,'123')
     this.traverseChildren()
     this.handleChildrenClick()
+    console.log(this.child,'child')
   },
   methods:{
     traverseChildren(){
-      this.menuItems.forEach(item =>
+      this.child.forEach(item =>
         // >=0 item.isSelected = true
         // <0  false
         item.isSelected = this.current.indexOf(item.menuName) >= 0
       )
     },
     handleChildrenClick(){
-      this.menuItems.forEach(item => {
+      this.child.forEach(item => {
         item.$on('change:selected',(data)=>{
           if (this.multiple) {
             //current里如果已经有相同name了什么也不做
@@ -57,6 +64,9 @@ export default {
           }
         })
       })
+    },
+    collectChild(child){
+      this.child.push(child)
     }
   },
   updated() {
