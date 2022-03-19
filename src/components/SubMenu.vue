@@ -49,7 +49,7 @@ export default {
 @include b(menu-item){
   @include menu-item;
   @include when(selected){
-    background: $--color-primary;
+    color: $--menu-item-selected-font-color;
   }
 }
 .w-submenu{
@@ -59,6 +59,10 @@ export default {
     top: 100%;
     left: 0;
     white-space: nowrap;
+    min-width: 200px;
+    border: none;
+    border-radius: $--border-radius-small;
+    box-shadow: $--box-shadow-light;
   }
 }
 .w-submenu__title{

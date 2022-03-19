@@ -1,5 +1,6 @@
 @import '../common/var';
 @import './config';
+@import './functions';
 
 //BEM规范
 @mixin b($block) {
@@ -40,3 +41,28 @@
 }
 
 
+@mixin e($element) {
+    $E: $element !global;
+    $selector: &;
+    $currentSelector: "";
+    @each $unit in $element {
+        //
+        $currentSelector: #{$currentSelector + "." + $B + $element-separator + $unit + ","};
+    }
+    
+    @if hitAllSpecialNestRule($selector) {
+        @at-root {
+            #{$selector} {
+                #{$currentSelector} {
+                    @content;
+                }
+            }
+        }
+    } @else {
+        @at-root {
+            #{$currentSelector} {
+                @content;
+            }
+        }
+    }
+}

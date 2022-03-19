@@ -6,28 +6,43 @@
     line-height:56px;
     padding: 0 20px;
     cursor: pointer;
-
+    position: relative;
+    color: $--menu-item-font-color;
+    font-size: $--menu-item-font-size;
+    white-space: nowrap;
 }
 
 @include b(menu){
-    border: 1px solid blue;
+    //border: 1px solid blue;
     //上面是临时的
     display:flex;
     justify-content:center;
     align-items:center;
     cursor: pointer;
+    background-color: $--menu-background-color;
+    border-bottom: solid 1px #e6e6e6;
 
 }
 @include b(submenu){
     //padding: 0 20px;
     cursor: pointer;
-
+    color: $--menu-item-font-color;
+    font-size: $--menu-item-font-size;
+    white-space: nowrap;
 }
 
 @include b(menu-item){
     @include menu-item;
     @include when(selected){
-        background: $--color-primary;
+        color: $--menu-item-selected-font-color;
+        &::after{
+            content: '';
+            position: absolute;
+            width:100%;
+            bottom: 0;
+            left: 0;
+            border-bottom: 2px solid $--color-primary;
+        }
     }
 }
 
