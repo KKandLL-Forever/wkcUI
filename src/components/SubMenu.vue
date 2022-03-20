@@ -2,6 +2,7 @@
   <div
     class="w-submenu"
     :class="[active?'is-selected':'']"
+    v-wipe="close"
   >
     <div class="w-submenu__title" @click="handleClick">
       <slot name="title"></slot>
@@ -13,9 +14,11 @@
 </template>
 
 <script>
+import wipe from '../wipeoutOtherState'
 export default {
   name: "SubMenu",
   inject: ['rootMenu'],
+  directives: {wipe},
   props: {
     menuName: {
       type: String,
@@ -43,6 +46,9 @@ export default {
       if(this.$parent.handleActionPathChange){
         this.$parent.handleActionPathChange()
       }
+    },
+    close(){
+      this.showDropdown = false
     },
   }
 }

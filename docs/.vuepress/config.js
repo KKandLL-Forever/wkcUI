@@ -6,6 +6,17 @@ module.exports = {
     lastUpdated: 'Last Updated',
     nav: [
       { text: 'Home', link: '/' },
+      {
+        text: '开发计划',
+        link: '/plan/'
+      },
+      {
+        text: '开发小记',
+        items:[
+          {text: 'button',link: '/button/'},
+          {text: 'NavMenu',link: '/nav-menu/'},
+        ]
+      },
       { text: 'Github', link: 'https://github.com/KKandLL-forever/wkcUI' },
     ],
     sidebar: [
@@ -29,14 +40,14 @@ module.exports = {
           '/components/tabs',
         ]
       },
-      {
-        title: '开发小记',
-        collapsable: false,
-        children: [
-          '/button/',
-          '/nav-menu/'
-        ]
-      },
+      // {
+      //   title: '开发小记',
+      //   collapsable: false,
+      //   children: [
+      //     '/button/',
+      //     '/nav-menu/'
+      //   ]
+      // },
     ],
   }
 }

@@ -2,7 +2,6 @@
   <div
     class="w-menu"
   >
-    {{actionPath}}
     <slot></slot>
   </div>
 </template>
