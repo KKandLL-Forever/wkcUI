@@ -34,6 +34,8 @@ export default {
   },
   methods:{
     handleClick(){
+      this.rootMenu.actionPath = []
+      this.$parent.handleActionPathChange && this.$parent.handleActionPathChange()
       this.$emit('change:selected',this.menuName)
     },
   }

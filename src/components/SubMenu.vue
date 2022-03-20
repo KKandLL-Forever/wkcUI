@@ -1,6 +1,7 @@
 <template>
   <div
     class="w-submenu"
+    :class="[active?'is-selected':'']"
   >
     <div class="w-submenu__title" @click="handleClick">
       <slot name="title"></slot>
@@ -14,16 +15,21 @@
 <script>
 export default {
   name: "SubMenu",
+  inject: ['rootMenu'],
   props: {
-    index: {
-      type: String
+    menuName: {
+      type: String,
+      require: true
     }
   },
   computed:{
+    active(){
+      return this.rootMenu.actionPath.indexOf(this.menuName) >= 0
+    }
   },
   data() {
    return {
-     showDropdown: false
+     showDropdown: false,
    }
   },
   mounted(){
@@ -31,6 +37,12 @@ export default {
   methods:{
     handleClick(){
       this.showDropdown = !this.showDropdown
+    },
+    handleActionPathChange(){
+      this.rootMenu.actionPath.unshift(this.menuName)
+      if(this.$parent.handleActionPathChange){
+        this.$parent.handleActionPathChange()
+      }
     },
   }
 }
@@ -54,6 +66,16 @@ export default {
 }
 .w-submenu{
   position: relative;
+  @include when(selected){
+    &::after{
+      content: '';
+      position: absolute;
+      width:100%;
+      bottom: 0;
+      left: 0;
+      border-bottom: 2px solid $--color-primary;
+    }
+  }
   &__dropdown{
     position: absolute;
     top: 100%;

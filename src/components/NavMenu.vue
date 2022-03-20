@@ -1,6 +1,8 @@
 <template>
   <div
-    class="w-menu">
+    class="w-menu"
+  >
+    {{actionPath}}
     <slot></slot>
   </div>
 </template>
@@ -16,7 +18,8 @@ export default {
   props: {
     current: {
       type: Array,
-      default: () => []
+      default: () => [],
+      require: true
     },
     multiple: {
       type: Boolean,
@@ -27,6 +30,7 @@ export default {
   data() {
    return {
      child: [],
+     actionPath: []
    }
   },
   mounted(){

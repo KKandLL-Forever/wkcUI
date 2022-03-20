@@ -187,13 +187,13 @@
 <!--    </div>-->
   
     <w-menu :current.sync="activeIndex" :multiple="false">
-      <w-menu-item menuName="center">处理中心</w-menu-item>
-      <w-submenu>
+      <w-menu-item menuName="handle">处理中心</w-menu-item>
+      <w-submenu menuName="center">
         <template v-slot:title>控制中心</template>
         <w-menu-item menuName="control1">控制1</w-menu-item>
         <w-menu-item menuName="control2">控制2</w-menu-item>
         <w-menu-item menuName="control3">控制3</w-menu-item>
-        <w-submenu>
+        <w-submenu menuName="control4">
           <template v-slot:title>控制4</template>
           <w-menu-item menuName="control1-1">控制1-1</w-menu-item>
           <w-menu-item menuName="control2-2">控制2-2</w-menu-item>

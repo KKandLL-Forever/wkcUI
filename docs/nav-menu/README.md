@@ -61,3 +61,33 @@ export default {
 </script>
 ```
 
+
+
+
+
+
+
+
+
+## Tips
+
+### js基础
+6
+```javascript
+let a = {
+  x: function (){
+    console.log(1)
+  }  
+}
+let b = function(){
+  a.x && a.x()
+  a.y && a.x()
+}
+//1 →只打印一次
+```
+
+
+
+
+
+
