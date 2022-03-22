@@ -71,9 +71,9 @@ export default {
 @import '../style/mixins/mixins';
 
 @mixin menu-item {
-  height: 56px;
-  line-height:56px;
-  padding: 0 20px;
+  height: 36px;
+  line-height:36px;
+  padding: 0 10px;
   cursor: pointer;
   
 }
@@ -96,6 +96,7 @@ export default {
     }
   }
   &__dropdown{
+    padding: 5px 0;
     position: absolute;
     top: 100%;
     left: 0;
@@ -117,16 +118,25 @@ export default {
   }
   .w-submenu__verticalArrow{
     display: inline-flex;
+    margin-left: 8px;
   }
 }
 
 .w-submenu .w-submenu {
+  
+  .w-submenu__title{
+    padding: 0 10px;
+    height: 36px;
+    line-height:36px;
+    display: flex;
+    justify-content:space-between;
+  }
   .w-submenu__dropdown{
     top: 0;
     left: 100%;
   }
   .w-submenu__horizontalArrow{
-    display: inline-flex;
+    display: inline-block;
   }
   .w-submenu__verticalArrow{
     display:none;

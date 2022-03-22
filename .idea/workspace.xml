@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63f8d7a5-52fa-4832-a596-6bc77878803a" name="Default Changelist" comment="feat(NavMenu): 增加subMenu的Icon&#10;&#10;增加subMenu的Icon">
+    <list default="true" id="63f8d7a5-52fa-4832-a596-6bc77878803a" name="Default Changelist" comment="feat(NavMenu): 替换所有iconfont,使用阿里国际站图标库&#10;&#10;替换所有iconfont,使用阿里国际站图标库">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SubMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SubMenu.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/icon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icon.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/svg.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -358,14 +356,7 @@
       <workItem from="1647692032851" duration="8194000" />
       <workItem from="1647774670410" duration="3488000" />
       <workItem from="1647911245986" duration="285000" />
-      <workItem from="1647954511922" duration="2245000" />
-    </task>
-    <task id="LOCAL-00045" summary="toast组件新功能: 动画优化">
-      <created>1595462605981</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1595462605981</updated>
+      <workItem from="1647954511922" duration="4429000" />
     </task>
     <task id="LOCAL-00046" summary="注册组件名修改">
       <created>1596002633533</created>
@@ -703,7 +694,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647963637469</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="feat(NavMenu): 替换所有iconfont,使用阿里国际站图标库&#10;&#10;替换所有iconfont,使用阿里国际站图标库">
+      <created>1647964480967</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1647964480967</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -777,7 +775,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat(准备替换node-sass至dart-sass): 准备替换node-sass至dart-sass&#10;&#10;准备替换node-sass至dart-sass" />
     <MESSAGE value="feat(升级vue-cli并使用dart-sass): 升级vue-cli并使用dart-sass&#10;&#10;升级vue-cli并使用dart-sass" />
     <MESSAGE value="feat(目录调整): 目录调整&#10;&#10;目录调整" />
     <MESSAGE value="button小记" />
@@ -802,7 +799,8 @@
     <MESSAGE value="feat: NavMenu-点击子菜单后父菜单需要成为isSelected" />
     <MESSAGE value="docs: vuepress更新" />
     <MESSAGE value="feat(NavMenu): 增加subMenu的Icon&#10;&#10;增加subMenu的Icon" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(NavMenu): 增加subMenu的Icon&#10;&#10;增加subMenu的Icon" />
+    <MESSAGE value="feat(NavMenu): 替换所有iconfont,使用阿里国际站图标库&#10;&#10;替换所有iconfont,使用阿里国际站图标库" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(NavMenu): 替换所有iconfont,使用阿里国际站图标库&#10;&#10;替换所有iconfont,使用阿里国际站图标库" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
