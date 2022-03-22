@@ -7,12 +7,12 @@
     <div class="w-submenu__title" @click="handleClick">
       <slot name="title"></slot>
       <span class="w-submenu__verticalArrow">
-        <w-icon name="setting" v-if="showDropdown"></w-icon>
-        <w-icon name="setting" v-else></w-icon>
+        <w-icon name="arrow-up" v-if="showDropdown"></w-icon>
+        <w-icon name="arrow-down" v-else></w-icon>
       </span>
       <span class="w-submenu__horizontalArrow">
-        <w-icon name="left" v-if="showDropdown"></w-icon>
-        <w-icon name="right" v-else></w-icon>
+        <w-icon name="arrow-left" v-if="showDropdown"></w-icon>
+        <w-icon name="arrow-right" v-else></w-icon>
       </span>
     </div>
     <div class="w-submenu__dropdown" v-show="showDropdown">

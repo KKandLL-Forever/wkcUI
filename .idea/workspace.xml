@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63f8d7a5-52fa-4832-a596-6bc77878803a" name="Default Changelist" comment="docs: vuepress更新">
+    <list default="true" id="63f8d7a5-52fa-4832-a596-6bc77878803a" name="Default Changelist" comment="feat(NavMenu): 增加subMenu的Icon&#10;&#10;增加subMenu的Icon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SubMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SubMenu.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/icon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icon.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -356,14 +358,7 @@
       <workItem from="1647692032851" duration="8194000" />
       <workItem from="1647774670410" duration="3488000" />
       <workItem from="1647911245986" duration="285000" />
-      <workItem from="1647954511922" duration="1700000" />
-    </task>
-    <task id="LOCAL-00044" summary="toast组件新功能: 避免重复新建toast-2">
-      <created>1595460062864</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1595460062864</updated>
+      <workItem from="1647954511922" duration="2245000" />
     </task>
     <task id="LOCAL-00045" summary="toast组件新功能: 动画优化">
       <created>1595462605981</created>
@@ -701,7 +696,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647777308256</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="feat(NavMenu): 增加subMenu的Icon&#10;&#10;增加subMenu的Icon">
+      <created>1647963637468</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1647963637469</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -775,7 +777,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat(回顾写下之前写的代码): 回顾写下之前写的代码&#10;&#10;回顾写下之前写的代码" />
     <MESSAGE value="feat(准备替换node-sass至dart-sass): 准备替换node-sass至dart-sass&#10;&#10;准备替换node-sass至dart-sass" />
     <MESSAGE value="feat(升级vue-cli并使用dart-sass): 升级vue-cli并使用dart-sass&#10;&#10;升级vue-cli并使用dart-sass" />
     <MESSAGE value="feat(目录调整): 目录调整&#10;&#10;目录调整" />
@@ -800,7 +801,8 @@
     <MESSAGE value="feat: NavMenu样式" />
     <MESSAGE value="feat: NavMenu-点击子菜单后父菜单需要成为isSelected" />
     <MESSAGE value="docs: vuepress更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: vuepress更新" />
+    <MESSAGE value="feat(NavMenu): 增加subMenu的Icon&#10;&#10;增加subMenu的Icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(NavMenu): 增加subMenu的Icon&#10;&#10;增加subMenu的Icon" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
