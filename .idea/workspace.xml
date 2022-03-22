@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63f8d7a5-52fa-4832-a596-6bc77878803a" name="Default Changelist" comment="feat: NavMenu-点击子菜单后父菜单需要成为isSelected">
-      <change afterPath="$PROJECT_DIR$/docs/plan/plan.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/wipeoutOtherState.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/wangkai.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/wangkai.xml" afterDir="false" />
+    <list default="true" id="63f8d7a5-52fa-4832-a596-6bc77878803a" name="Default Changelist" comment="docs: vuepress更新">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavMenu.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SubMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SubMenu.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -292,8 +287,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.docs:dev" />
         <item itemvalue="npm.serve" />
+        <item itemvalue="npm.docs:dev" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
         <item itemvalue="JavaScript 调试.localhost:1234" />
@@ -359,14 +354,9 @@
       <workItem from="1647398025598" duration="1662000" />
       <workItem from="1647443411331" duration="21763000" />
       <workItem from="1647692032851" duration="8194000" />
-      <workItem from="1647774670410" duration="2356000" />
-    </task>
-    <task id="LOCAL-00043" summary="toast组件新功能: 渐变进入动画">
-      <created>1595460024518</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1595460024518</updated>
+      <workItem from="1647774670410" duration="3488000" />
+      <workItem from="1647911245986" duration="285000" />
+      <workItem from="1647954511922" duration="1700000" />
     </task>
     <task id="LOCAL-00044" summary="toast组件新功能: 避免重复新建toast-2">
       <created>1595460062864</created>
@@ -704,7 +694,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647774050057</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="docs: vuepress更新">
+      <created>1647777308256</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1647777308256</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -778,7 +775,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="vuePress更新各组件的api说明;各组件h2的icon更新" />
     <MESSAGE value="feat(回顾写下之前写的代码): 回顾写下之前写的代码&#10;&#10;回顾写下之前写的代码" />
     <MESSAGE value="feat(准备替换node-sass至dart-sass): 准备替换node-sass至dart-sass&#10;&#10;准备替换node-sass至dart-sass" />
     <MESSAGE value="feat(升级vue-cli并使用dart-sass): 升级vue-cli并使用dart-sass&#10;&#10;升级vue-cli并使用dart-sass" />
@@ -803,7 +799,8 @@
     <MESSAGE value="feat: NavMenu子菜单弹出&amp;多层嵌套" />
     <MESSAGE value="feat: NavMenu样式" />
     <MESSAGE value="feat: NavMenu-点击子菜单后父菜单需要成为isSelected" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: NavMenu-点击子菜单后父菜单需要成为isSelected" />
+    <MESSAGE value="docs: vuepress更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: vuepress更新" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

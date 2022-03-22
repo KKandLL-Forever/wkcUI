@@ -6,6 +6,14 @@
   >
     <div class="w-submenu__title" @click="handleClick">
       <slot name="title"></slot>
+      <span class="w-submenu__verticalArrow">
+        <w-icon name="setting" v-if="showDropdown"></w-icon>
+        <w-icon name="setting" v-else></w-icon>
+      </span>
+      <span class="w-submenu__horizontalArrow">
+        <w-icon name="left" v-if="showDropdown"></w-icon>
+        <w-icon name="right" v-else></w-icon>
+      </span>
     </div>
     <div class="w-submenu__dropdown" v-show="showDropdown">
       <slot name="default"></slot>
@@ -15,8 +23,12 @@
 
 <script>
 import wipe from '../wipeoutOtherState'
+import Icon from '../components/icon'
 export default {
   name: "SubMenu",
+  components:{
+    Icon
+  },
   inject: ['rootMenu'],
   directives: {wipe},
   props: {
@@ -36,6 +48,7 @@ export default {
    }
   },
   mounted(){
+    console.log(wipe,'wipe')
   },
   methods:{
     handleClick(){
@@ -99,11 +112,25 @@ export default {
   //position: relative;
   height: 56px;
   line-height:56px;
+  .w-submenu__horizontalArrow{
+    display: none;
+  }
+  .w-submenu__verticalArrow{
+    display: inline-flex;
+  }
 }
 
-.w-submenu .w-submenu .w-submenu__dropdown{
-  top: 0;
-  left: 100%;
+.w-submenu .w-submenu {
+  .w-submenu__dropdown{
+    top: 0;
+    left: 100%;
+  }
+  .w-submenu__horizontalArrow{
+    display: inline-flex;
+  }
+  .w-submenu__verticalArrow{
+    display:none;
+  }
 }
 
 </style>
