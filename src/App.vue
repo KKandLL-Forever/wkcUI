@@ -186,23 +186,23 @@
 <!--      <w-input value="王" error="姓名不能少于两个字"></w-input>-->
 <!--    </div>-->
   
-    <w-menu :current.sync="activeIndex" :multiple="false">
-      <w-menu-item menuName="handle">处理中心</w-menu-item>
-      <w-submenu menuName="center">
-        <template v-slot:title>控制中心</template>
-        <w-menu-item menuName="control1">控制1</w-menu-item>
-        <w-menu-item menuName="control2">控制2</w-menu-item>
-        <w-menu-item menuName="control3">控制3</w-menu-item>
-        <w-submenu menuName="control4">
-          <template v-slot:title>控制4</template>
-          <w-menu-item menuName="control1-1">控制1-1</w-menu-item>
-          <w-menu-item menuName="control2-2">控制2-2</w-menu-item>
-          <w-menu-item menuName="control3-3">控制3-3</w-menu-item>
+      <w-menu :current.sync="activeIndex" :multiple="false">
+        <w-menu-item menuName="handle">处理中心</w-menu-item>
+        <w-submenu menuName="center">
+          <template v-slot:title>控制中心</template>
+          <w-menu-item menuName="control1">控制1</w-menu-item>
+          <w-menu-item menuName="control2">控制2</w-menu-item>
+          <w-menu-item menuName="control3">控制3</w-menu-item>
+          <w-submenu menuName="control4">
+            <template v-slot:title>控制4</template>
+            <w-menu-item menuName="control1-1">控制1-1</w-menu-item>
+            <w-menu-item menuName="control2-2">控制2-2</w-menu-item>
+            <w-menu-item menuName="control3-3">控制3-3</w-menu-item>
+          </w-submenu>
         </w-submenu>
-      </w-submenu>
-      <w-menu-item menuName="message">消息中心</w-menu-item>
-      <w-menu-item menuName="order">订单管理</w-menu-item>
-    </w-menu>
+        <w-menu-item menuName="message">消息中心</w-menu-item>
+        <w-menu-item menuName="order">订单管理</w-menu-item>
+      </w-menu>
 
 <!--    <div class="test">-->
 <!--      123-->

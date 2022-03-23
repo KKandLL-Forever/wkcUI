@@ -134,6 +134,7 @@ export default {
   .w-submenu__dropdown{
     top: 0;
     left: 100%;
+    margin-left:10px;
   }
   .w-submenu__horizontalArrow{
     display: inline-block;

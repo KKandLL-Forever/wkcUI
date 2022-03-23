@@ -15,8 +15,10 @@
 @include b(menu){
     //border: 1px solid blue;
     //上面是临时的
+    width: 100%;
+    padding-left: 55px;
     display:flex;
-    justify-content:center;
+    justify-content:flex-start;
     align-items:center;
     cursor: pointer;
     background-color: $--menu-background-color;
