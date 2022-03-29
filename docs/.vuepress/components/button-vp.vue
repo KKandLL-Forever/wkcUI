@@ -1,7 +1,7 @@
 <template>
   <div class="demo">
     <div class="hWrapper">
-      <w-icon class="h2Icon" name="bofangqi"></w-icon>
+      <w-icon class="h2Icon" name="link"></w-icon>
       <h2>简单用法</h2>
     </div>
     <p>预览</p>
@@ -41,14 +41,14 @@
         </div>
       </div>
       <div class="lock-code" @click="showCode(0)" ref="xxx">
-        <w-icon class="icon-down" :name="isShow[0] === false ? 'down' : 'up'"></w-icon>
+        <w-icon class="icon-down" :name="isShow[0] === false ? 'arrow-down' : 'arrow-up'"></w-icon>
         <span class="lock-code-word">{{isShow[0] === false ? '显示代码' : '隐藏代码'}}</span>
       </div>
     </div>
     
     
     <div class="hWrapper">
-      <w-icon class="h2Icon" name="bofangqi"></w-icon>
+      <w-icon class="h2Icon" name="link"></w-icon>
       <h2>disabled状态</h2>
     </div>
     <p>预览</p>
@@ -81,13 +81,13 @@
         </div>
       </div>
       <div class="lock-code" @click="showCode(0)" ref="xxx">
-        <w-icon class="icon-down" :name="isShow[0] === false ? 'down' : 'up'"></w-icon>
+        <w-icon class="icon-down" :name="isShow[0] === false ? 'arrow-down' : 'arrow-up'"></w-icon>
         <span class="lock-code-word">{{isShow[0] === false ? '显示代码' : '隐藏代码'}}</span>
       </div>
     </div>
   
     <div class="hWrapper">
-      <w-icon class="h2Icon" name="bofangqi"></w-icon>
+      <w-icon class="h2Icon" name="link"></w-icon>
       <h2>文字样式</h2>
     </div>
     <p>预览</p>
@@ -107,13 +107,13 @@
         </div>
       </div>
       <div class="lock-code" @click="showCode(0)" ref="xxx">
-        <w-icon class="icon-down" :name="isShow[0] === false ? 'down' : 'up'"></w-icon>
+        <w-icon class="icon-down" :name="isShow[0] === false ? 'arrow-down' : 'arrow-up'"></w-icon>
         <span class="lock-code-word">{{isShow[0] === false ? '显示代码' : '隐藏代码'}}</span>
       </div>
     </div>
   
     <div class="hWrapper">
-      <w-icon class="h2Icon" name="bofangqi"></w-icon>
+      <w-icon class="h2Icon" name="link"></w-icon>
       <h2>图标按钮</h2>
     </div>
     <p>预览</p>
@@ -136,14 +136,14 @@
         </div>
       </div>
       <div class="lock-code" @click="showCode(0)" ref="xxx">
-        <w-icon class="icon-down" :name="isShow[0] === false ? 'down' : 'up'"></w-icon>
+        <w-icon class="icon-down" :name="isShow[0] === false ? 'arrow-down' : 'arrow-up'"></w-icon>
         <span class="lock-code-word">{{isShow[0] === false ? '显示代码' : '隐藏代码'}}</span>
       </div>
     </div>
   
   
     <div class="hWrapper">
-      <w-icon class="h2Icon" name="bofangqi"></w-icon>
+      <w-icon class="h2Icon" name="link"></w-icon>
       <h2>Loading状态</h2>
     </div>
     <p>预览</p>
@@ -167,14 +167,14 @@
         </div>
       </div>
       <div class="lock-code" @click="showCode(0)" ref="xxx">
-        <w-icon class="icon-down" :name="isShow[0] === false ? 'down' : 'up'"></w-icon>
+        <w-icon class="icon-down" :name="isShow[0] === false ? 'arrow-down' : 'arrow-up'"></w-icon>
         <span class="lock-code-word">{{isShow[0] === false ? '显示代码' : '隐藏代码'}}</span>
       </div>
     </div>
   
   
     <div class="hWrapper">
-      <w-icon class="h2Icon" name="bofangqi"></w-icon>
+      <w-icon class="h2Icon" name="link"></w-icon>
       <h2>按钮组</h2>
     </div>
     <p>允许在一个Group里放入多个Button</p>
@@ -195,7 +195,7 @@
         </div>
       </div>
       <div class="lock-code" @click="showCode(1)" ref="xxx">
-        <w-icon class="icon-down" :name="isShow[1] === false ? 'down' : 'up'"></w-icon>
+        <w-icon class="icon-down" :name="isShow[1] === false ? 'arrow-down' : 'arrow-up'"></w-icon>
         <span class="lock-code-word">{{isShow[1] === false ? '显示代码' : '隐藏代码'}}</span>
       </div>
     </div>
