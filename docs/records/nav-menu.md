@@ -1,5 +1,6 @@
 ---
 title: NavMenu要点
+sidebar: auto
 ---
 
 ## 点击切换的实现思路

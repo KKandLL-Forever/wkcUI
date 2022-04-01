@@ -1,5 +1,6 @@
 ---
 title: button要点
+sidebar: auto
 ---
 ## 组件内怎么接收多个class
 

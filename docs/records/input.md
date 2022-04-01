@@ -1,5 +1,6 @@
 ---
 title: Input要点
+sidebar: auto
 ---
 
 ### 双向绑定
