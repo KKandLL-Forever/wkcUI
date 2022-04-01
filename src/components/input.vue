@@ -1,6 +1,10 @@
 <template>
   <div class="wrapper" :class="{error}">
-    <input :value="value" type="text" :disabled="disabled" :readonly="readonly"
+    <input :value="value"
+           type="text"
+           :disabled="disabled"
+           :readonly="readonly"
+           :placeholder="placeholder"
            @change="$emit('change',$event.target.value)"
            @input="$emit('input',$event.target.value)"
            @focus="$emit('focus',$event.target.value)"
@@ -33,7 +37,10 @@ export default {
     },
     error: {
       type: String
-    }
+    },
+    placeholder: {
+      type: String
+    },
   }
 }
 </script>
@@ -61,6 +68,9 @@ $red: #F1453D;
     color: #606266;
     padding: 0 8px;
     font-size: inherit;
+    &::placeholder {
+      color: $border-color
+    }
     &:hover{
       border-color: #c0c4cc;
     }
@@ -69,7 +79,7 @@ $red: #F1453D;
       border-color: $--color-primary;
     }
     &[disabled],&[readonly]{
-      border-color: #bbb;
+      border: 1px solid $border-color;
       color: #bbb;
       cursor: not-allowed;
     }

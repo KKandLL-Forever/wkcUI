@@ -25,7 +25,7 @@ module.exports = {
           title: 'Navigation',
           collapsable: false,
           children: [
-            '/ui/components/Navigation/Input/',
+            '/ui/components/Navigation/NavMenu/',
             '/ui/components/Navigation/Tabs/'
           ]
         },

@@ -222,6 +222,8 @@ export default {
   },
   data() {
     return {
+      loading2: false,
+      loading3: false,
       codeShow: `
           <w-button>默认按钮</w-button>
           <w-button icon="setting">默认按钮</w-button>
