@@ -37,9 +37,9 @@
           <pre v-highlightjs class="pre"><code class="vue">{{codeShow2}}</code></pre>
         </div>
       </div>
-      <div class="lock-code" @click="showCode(0)" ref="xxx">
-        <w-icon class="icon-down" :name="isShow[0] === false ? 'arrow-down' : 'arrow-up'"></w-icon>
-        <span class="lock-code-word">{{isShow[0] === false ? '显示代码' : '隐藏代码'}}</span>
+      <div class="lock-code" @click="showCode(1)" ref="xxx">
+        <w-icon class="icon-down" :name="isShow[1] === false ? 'arrow-down' : 'arrow-up'"></w-icon>
+        <span class="lock-code-word">{{isShow[1] === false ? '显示代码' : '隐藏代码'}}</span>
       </div>
     </div>
   
@@ -60,9 +60,34 @@
           <pre v-highlightjs class="pre"><code class="vue">{{codeShow3}}</code></pre>
         </div>
       </div>
-      <div class="lock-code" @click="showCode(0)" ref="xxx">
-        <w-icon class="icon-down" :name="isShow[0] === false ? 'arrow-down' : 'arrow-up'"></w-icon>
-        <span class="lock-code-word">{{isShow[0] === false ? '显示代码' : '隐藏代码'}}</span>
+      <div class="lock-code" @click="showCode(2)" ref="xxx">
+        <w-icon class="icon-down" :name="isShow[2] === false ? 'arrow-down' : 'arrow-up'"></w-icon>
+        <span class="lock-code-word">{{isShow[2] === false ? '显示代码' : '隐藏代码'}}</span>
+      </div>
+    </div>
+  
+  
+  
+    <div class="hWrapper">
+      <w-icon class="h2Icon" name="link"></w-icon>
+      <h2>密码框</h2>
+    </div>
+    <p>预览</p>
+    <div class="component-wrapper">
+      <div class="component-wrapper-demo">
+        <w-input placeholder="请输入内容" show-password></w-input>
+      </div>
+      <div class="code-content" style="height: 0;">
+        <div class="code-content-height">
+          <!--<div class="code-user-desc">-->
+          <!--组件描述说明-->
+          <!--</div>-->
+          <pre v-highlightjs class="pre"><code class="vue">{{codeShow4}}</code></pre>
+        </div>
+      </div>
+      <div class="lock-code" @click="showCode(3)" ref="xxx">
+        <w-icon class="icon-down" :name="isShow[3] === false ? 'arrow-down' : 'arrow-up'"></w-icon>
+        <span class="lock-code-word">{{isShow[3] === false ? '显示代码' : '隐藏代码'}}</span>
       </div>
     </div>
     
@@ -96,6 +121,9 @@ export default {
         `.replace(/^ {8}/gm, '').trim(),
       codeShow3:`
           <w-input placeholder="请输入内容" readonly></w-input>
+        `.replace(/^ {8}/gm, '').trim(),
+      codeShow4:`
+          <w-input placeholder="请输入内容" show-password></w-input>
         `.replace(/^ {8}/gm, '').trim(),
     }
   }

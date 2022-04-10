@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper" :class="{error}">
     <input :value="value"
-           type="text"
+           :type="showPassword ? 'password' : 'text'"
            :disabled="disabled"
            :readonly="readonly"
            :placeholder="placeholder"
@@ -41,6 +41,10 @@ export default {
     placeholder: {
       type: String
     },
+    showPassword: {
+      type: Boolean,
+      default: false
+    }
   }
 }
 </script>
