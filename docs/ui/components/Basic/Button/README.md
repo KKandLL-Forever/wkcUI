@@ -8,7 +8,7 @@ title: Button按钮
 <button-vp></button-vp>
 </ClientOnly>
 
-## API
+### API
 
 参数 | 说明 | 类型 | 默认值
 :--- | :--- | :--- | :---

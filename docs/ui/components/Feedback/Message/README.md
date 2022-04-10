@@ -8,7 +8,7 @@ title: Toast轻提示
 <toast-vp></toast-vp>
 </ClientOnly>
 
-## API
+### API
 
 属性 |	说明	| 类型 |	默认值
 :--- | :--- | :--- | :---
