@@ -175,7 +175,7 @@
     <div class="box">
       <w-input value="李四" disabled></w-input>
       <w-input value="张三" readonly></w-input>
-      <w-input placeholder="请输入" v-model="message"></w-input>
+      <w-input placeholder="请输入" v-model="message" @focus="xxx"></w-input>
       <p>{{message}}</p>
       <button @click="message+=1">+1</button>
     </div>
@@ -223,6 +223,9 @@ export default {
     }
   },
   methods:{
+    xxx(e){
+      console.log(e)
+    },
     inputChange(e){
       console.log(e.target.value);
     },
