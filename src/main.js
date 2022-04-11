@@ -10,7 +10,7 @@ import Col from './components/col'
 import Content from './components/content'
 import Footer from './components/footer'
 import Header from './components/header'
-import Layout from './components/layout'
+import Container from './components/Container'
 import Sider from './components/sider'
 // import Toast from './toast'
 // import plugin from './plugin'
@@ -33,7 +33,7 @@ Vue.component('w-col',Col)
 Vue.component('w-content', Content)
 Vue.component('w-footer', Footer)
 Vue.component('w-header', Header)
-Vue.component('w-layout', Layout)
+Vue.component('w-container', Container)
 Vue.component('w-sider', Sider)
 // Vue.component('w-toast', Toast)
 // Vue.component('w-tabs', Tabs)

@@ -61,26 +61,31 @@
     
     
     
-    <!--  <w-row>-->
-    <!--    <w-col span="23" offset="1" :narrow-pc="{span: 12,offset:12}">-->
-    <!--      <div class="demo"></div>-->
-    <!--    </w-col>-->
-    <!--    <w-col span="24" :narrow-pc="{span: 8}">-->
-    <!--      <div class="demo"></div>-->
-    <!--    </w-col>-->
-    <!--    <w-col span="24" :narrow-pc="{span: 8}">-->
-    <!--      <div class="demo"></div>-->
-    <!--    </w-col>-->
-    <!--    <w-col span="24" :narrow-pc="{span: 8}">-->
-    <!--      <div class="demo"></div>-->
-    <!--    </w-col>-->
-    <!--    <w-col span="24" :narrow-pc="{span: 8}">-->
-    <!--      <div class="demo"></div>-->
-    <!--    </w-col>-->
-    <!--    <w-col span="24" :narrow-pc="{span: 8}">-->
-    <!--      <div class="demo"></div>-->
-    <!--    </w-col>-->
-    <!--  </w-row>-->
+      <w-row>
+        <w-col span="23" offset="1">
+          <w-button icon="setting">默认按钮</w-button>
+          <w-button type="primary">主要按钮</w-button>
+          <w-button type="success">成功按钮</w-button>
+          <w-button type="info">信息按钮</w-button>
+          <w-button type="warning">警告按钮</w-button>
+          <w-button type="danger">危险按钮</w-button>
+        </w-col>
+        <w-col span="24" >
+          <div class="demo">44444</div>
+        </w-col>
+        <w-col span="24" >
+          <div class="demo">44444</div>
+        </w-col>
+        <w-col span="24" >
+          <div class="demo">44444</div>
+        </w-col>
+        <w-col span="24" >
+          <div class="demo">44444</div>
+        </w-col>
+        <w-col span="24">
+          <div class="demo">44444</div>
+        </w-col>
+      </w-row>
     
     
     
@@ -172,19 +177,19 @@
     <!--    </div>-->
     
     
-    <div class="box">
-      <w-input value="李四" disabled></w-input>
-      <w-input value="张三" readonly></w-input>
-      <w-input placeholder="请输入" v-model="message" show-password></w-input>
-      <p>{{message}}</p>
-      <button @click="message+=1">+1</button>
-    </div>
-    <div class="box">
-      <w-input value="王" @change="inputChange"></w-input>
-    </div>
-    <div class="box">
-      <w-input value="王" error="姓名不能少于两个字"></w-input>
-    </div>
+<!--    <div class="box">-->
+<!--      <w-input value="李四" disabled></w-input>-->
+<!--      <w-input value="张三" readonly></w-input>-->
+<!--      <w-input placeholder="请输入" v-model="message" show-password></w-input>-->
+<!--      <p>{{message}}</p>-->
+<!--      <button @click="message+=1">+1</button>-->
+<!--    </div>-->
+<!--    <div class="box">-->
+<!--      <w-input value="王" @change="inputChange"></w-input>-->
+<!--    </div>-->
+<!--    <div class="box">-->
+<!--      <w-input value="王" error="姓名不能少于两个字"></w-input>-->
+<!--    </div>-->
     
     <!--      <w-menu :current.sync="activeIndex" :multiple="false">-->
     <!--        <w-menu-item menuName="handle">处理中心</w-menu-item>-->

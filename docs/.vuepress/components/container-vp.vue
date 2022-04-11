@@ -7,7 +7,7 @@
     <!--<p>预览</p>-->
     <div class="component-wrapper">
       <div class="component-wrapper-demo">
-        <w-layout style="color: white; margin-bottom:50px;">
+        <w-container style="color: white; margin-bottom:50px;">
           <w-header style="display:flex;justify-content: center;align-items: center;height: 50px; background:#C8E6C9;">
             header
           </w-header>
@@ -17,7 +17,7 @@
           <w-footer style="display:flex;justify-content: center;align-items: center;height: 50px; background:#C8E6C9;">
             footer
           </w-footer>
-        </w-layout>
+        </w-container>
       </div>
       <div class="code-content" style="height: 0;">
         <div class="code-content-height">
@@ -39,22 +39,22 @@
     <!--<p>预览</p>-->
     <div class="component-wrapper">
       <div class="component-wrapper-demo">
-        <w-layout style="color: white; overflow:hidden; margin-bottom:50px;">
+        <w-container style="color: white; overflow:hidden; margin-bottom:50px;">
           <w-header style="display:flex;justify-content: center;align-items: center;height: 50px; background:#C8E6C9;">
             header
           </w-header>
-          <w-layout>
+          <w-container>
             <w-sider style="display:flex;justify-content: center;align-items: center;height: 100px; background:#388E3C; width:200px;">
               sider
             </w-sider>
             <w-content style="display:flex;justify-content: center;align-items: center;height: 100px; background:#4CAF50;">
               content
             </w-content>
-          </w-layout>
+          </w-container>
           <w-footer style="display:flex;justify-content: center;align-items: center;height: 50px; background:#C8E6C9;">
             footer
           </w-footer>
-        </w-layout>
+        </w-container>
       </div>
       <div class="code-content" style="height: 0;">
         <div class="code-content-height">
@@ -76,11 +76,11 @@
     <!--<p>预览</p>-->
     <div class="component-wrapper">
       <div class="component-wrapper-demo">
-        <w-layout style="color: white; overflow:hidden; margin-bottom:50px;">
+        <w-container style="color: white; overflow:hidden; margin-bottom:50px;">
           <w-sider style="display:flex;justify-content: center;align-items: center; background:#388E3C; width:200px; color: white;">
             sider
           </w-sider>
-          <w-layout>
+          <w-container>
             <w-header style="display:flex;justify-content: center;align-items: center;height: 50px; background:#C8E6C9;">
               header
             </w-header>
@@ -90,8 +90,8 @@
             <w-footer style="display:flex;justify-content: center;align-items: center;height: 50px; background:#C8E6C9;">
               footer
             </w-footer>
-          </w-layout>
-        </w-layout>
+          </w-container>
+        </w-container>
       </div>
       <div class="code-content" style="height: 0;">
         <div class="code-content-height">
@@ -111,7 +111,7 @@
 
 <script>
   import Vue from 'vue'
-  import Layout from '../../../src/components/layout'
+  import Container from '../../../src/components/Container'
   import Header from '../../../src/components/header'
   import Content from '../../../src/components/content'
   import Sider from '../../../src/components/sider'
@@ -126,7 +126,7 @@
     name: 'demo',
     mixins: [mixin],
     components: {
-      'w-layout': Layout,
+      'w-container': Container,
       'w-header': Header,
       'w-content': Content,
       'w-sider': Sider,
@@ -137,7 +137,7 @@
       return {
         value: '1',
         codeShow: `
-          <w-layout style="color: white; margin-bottom:50px;">
+          <w-container style="color: white; margin-bottom:50px;">
             <w-header style="display:flex;justify-content: center;align-items: center;height: 50px; background:lightskyblue;">
               header
             </w-header>
@@ -147,32 +147,32 @@
             <w-footer style="display:flex;justify-content: center;align-items: center;height: 50px; background:lightskyblue;">
               footer
             </w-footer>
-          </w-layout>
+          </w-container>
         `.replace(/^ {8}/gm, '').trim(),
         codeShow2:`
-          <w-layout style="color: white; overflow:hidden; margin-bottom:50px;">
+          <w-container style="color: white; overflow:hidden; margin-bottom:50px;">
             <w-header style="display:flex;justify-content: center;align-items: center;height: 50px; background:lightskyblue;">
               header
             </w-header>
-            <w-layout>
+            <w-container>
               <w-sider style="display:flex;justify-content: center;align-items: center;height: 100px; background:#03a9f4d9; width:200px;">
                 sider
               </w-sider>
               <w-content style="display:flex;justify-content: center;align-items: center;height: 100px; background:deepskyblue;">
                 content
               </w-content>
-            </w-layout>
+            </w-container>
             <w-footer style="display:flex;justify-content: center;align-items: center;height: 50px; background:lightskyblue;">
               footer
             </w-footer>
-          </w-layout>
+          </w-container>
         `.replace(/^ {8}/gm, '').trim(),
         codeShow3:`
-           <w-layout style="color: white; overflow:hidden; margin-bottom:50px;">
+           <w-container style="color: white; overflow:hidden; margin-bottom:50px;">
               <w-sider style="display:flex;justify-content: center;align-items: center; background:#03a9f4d9; width:200px; color: white;">
                 sider
               </w-sider>
-              <w-layout>
+              <w-container>
                 <w-header style="display:flex;justify-content: center;align-items: center;height: 50px; background:lightskyblue;">
                   header
                 </w-header>
@@ -182,8 +182,8 @@
                 <w-footer style="display:flex;justify-content: center;align-items: center;height: 50px; background:lightskyblue;">
                   footer
                 </w-footer>
-              </w-layout>
-            </w-layout>
+              </w-container>
+            </w-container>
         `.replace(/^ {8}/gm, '').trim(),
 
       }

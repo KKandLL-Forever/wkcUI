@@ -6,7 +6,7 @@
 
 <script>
   export default {
-    name: "layout.vue",
+    name: "Container",
     data(){
       return {
         layoutClass:{

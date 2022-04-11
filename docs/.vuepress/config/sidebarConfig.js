@@ -11,6 +11,7 @@ module.exports = {
           collapsable: false,
           children: [
             '/ui/components/Basic/Button/',
+            '/ui/components/Basic/Container/',
             '/ui/components/Basic/Layout/',
           ]
         },
