@@ -95,11 +95,11 @@
 
 <script>
   import Vue from 'vue'
-  import Tabs from '../../../src/tabs'
-  import TabsBody from '../../../src/tabs-body'
-  import TabsContent from '../../../src/tabs-content'
-  import TabsHead from '../../../src/tabs-head'
-  import TabsItem from '../../../src/tabs-item'
+  import Tabs from '../../../src/components/Tabs/tabs'
+  import TabsBody from '../../../src/components/Tabs/tabs-body'
+  import TabsContent from '../../../src/components/Tabs/tabs-content'
+  import TabsHead from '../../../src/components/Tabs/tabs-head'
+  import TabsItem from '../../../src/components/Tabs/tabs-item'
   import Button from '../../../src/components/Button'
   import Icon from '../../../src/components/icon'
   import VueHighlightJS from 'vue-highlightjs';
