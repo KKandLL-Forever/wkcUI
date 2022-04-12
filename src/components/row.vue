@@ -8,6 +8,11 @@
 <script>
   export default {
     name: "wkcRow",
+    provide () {
+      return {
+        gutter: this.gutter
+      }
+    },
     props:{
       gutter:{
         type:[Number,String]
@@ -19,11 +24,11 @@
         }
       }
     },
-    mounted() {
-      this.$children.forEach((vm)=>{
-        vm.gutter = this.gutter
-      })
-    },
+    // mounted() {
+    //   this.$children.forEach((vm)=>{
+    //     vm.gutter = this.gutter
+    //   })
+    // },
     computed:{
       rowStyle(){
         let {gutter} = this

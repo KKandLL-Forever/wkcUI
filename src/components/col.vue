@@ -18,6 +18,7 @@
   }
   export default {
    name: "wkcCol",
+    inject: ['gutter'],
     props: {
       span: {
         type: [Number, String]
@@ -32,7 +33,6 @@
     },
     data(){
      return{
-       gutter: 0
      }
     },
     methods:{

@@ -73,4 +73,67 @@ col:本质上通过width百分比来控制宽度.
 
 ## gutter实现原理
 
+```scss
+//col
 
+.col {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+```
+
+```scss
+//row
+
+.row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+```
+
+::: warning 警告
+但要特别注意,这里一定要使用border-box
+:::  
+
+那怎么传递给col呢?
+使用provide和inject传递给row下面的所有组件
+
+```javascript
+//row组件
+export default {
+  provide () {
+    return {
+      gutter: this.gutter
+    }
+  },
+  props:{
+    gutter:{
+      type:[Number,String]
+    },
+  },
+  computed:{
+    rowStyle(){
+      let {gutter} = this
+      return {
+        marginRight: -gutter/2+'px',
+        marginLeft: -gutter/2+'px'
+      }
+    },
+  }
+}
+```
+
+```javascript
+//col组件
+export default {
+    inject: ['gutter'],
+    computed:{
+     colStyle(){
+       return{
+         paddingLeft: this.gutter/2 + 'px',
+         paddingRight: this.gutter/2 + 'px'
+       }
+     }
+    }
+  }
+```

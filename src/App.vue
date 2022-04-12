@@ -60,34 +60,21 @@
     
     
     
-    
-      <w-row>
-        <w-col span="23" offset="1">
-          <w-button icon="setting">默认按钮</w-button>
-          <w-button type="primary">主要按钮</w-button>
-          <w-button type="success">成功按钮</w-button>
-          <w-button type="info">信息按钮</w-button>
-          <w-button type="warning">警告按钮</w-button>
-          <w-button type="danger">危险按钮</w-button>
+  
+    <div class="box">
+      <w-row class="demoRow" gutter="10">
+        <w-col span="18">
+          <div class="demoCol">
+            <w-button type="warning">警告按钮</w-button>
+            <w-button type="warning">警告按钮</w-button>
+          </div>
         </w-col>
-        <w-col span="24" >
-          <div class="demo">44444</div>
-        </w-col>
-        <w-col span="24" >
-          <div class="demo">44444</div>
-        </w-col>
-        <w-col span="24" >
-          <div class="demo">44444</div>
-        </w-col>
-        <w-col span="24" >
-          <div class="demo">44444</div>
-        </w-col>
-        <w-col span="24">
-          <div class="demo">44444</div>
+        <w-col span="6">
+          <div class="demoCol">6</div>
         </w-col>
       </w-row>
-    
-    
+    </div>
+  
     
     
     <!--    <div class="button-box">-->
@@ -260,17 +247,23 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-//.test{
-//  height: 300px;
-//}
-////.is-test{
-////  border: 1px solid blue;
-////}
-//.test .is-test{
-//  height: 200px;
-//  width: 200px;
-//  border: 1px solid green;
-//}
+.box{
+  width: 800px;
+  height: 300px;
+  border: 1px solid red;
+}
+.demoRow{
+  //margin: 10px 0;
+}
+.demoCol {
+  height: 50px;
+  border: 1px solid #ccc;
+  background: #C8E6C9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .button-box{}
 </style>
