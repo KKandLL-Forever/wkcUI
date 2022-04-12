@@ -11,6 +11,7 @@ module.exports = [
       {text: 'Button',link: '/records/button'},
       {text: 'NavMenu',link: '/records/nav-menu'},
       {text: 'Input',link: '/records/input'},
+      {text: 'Layout',link: '/records/layout'},
     ]
   },
   {

@@ -29,7 +29,7 @@
 
 <script>
   import Vue from 'vue'
-  import Toast from '../../../src/toast'
+  import Toast from '../../../src/components/toast'
   import plugin from '../../../src/plugin'
   import Button from '../../../src/components/Button'
   import Icon from '../../../src/components/icon'

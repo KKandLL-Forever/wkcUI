@@ -70,10 +70,9 @@ export default {
 
 
 
-## Tips
+### Tips
 
-### js基础
-6
+#### js基础
 ```javascript
 let a = {
   x: function (){
