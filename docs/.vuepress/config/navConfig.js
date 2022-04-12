@@ -12,6 +12,7 @@ module.exports = [
       {text: 'NavMenu',link: '/records/nav-menu'},
       {text: 'Input',link: '/records/input'},
       {text: 'Layout',link: '/records/layout'},
+      {text: 'Container',link: '/records/Container'},
     ]
   },
   {

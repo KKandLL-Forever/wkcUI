@@ -25,11 +25,11 @@
         </div>
         <div>
           <w-button circle icon="setting"></w-button>
-          <w-button circle type="primary" icon="setting"></w-button>
-          <w-button circle type="success" icon="setting"></w-button>
-          <w-button circle type="info" icon="setting"></w-button>
-          <w-button circle type="warning" icon="setting"></w-button>
-          <w-button circle type="danger" icon="setting"></w-button>
+          <w-button circle type="primary" icon="set"></w-button>
+          <w-button circle type="success" icon="set"></w-button>
+          <w-button circle type="info" icon="set"></w-button>
+          <w-button circle type="warning" icon="set"></w-button>
+          <w-button circle type="danger" icon="set"></w-button>
         </div>
       </div>
       <div class="code-content" style="height: 0;">
@@ -55,17 +55,17 @@
     <div class="component-wrapper">
       <div class="component-wrapper-demo">
         <div>
-          <w-button disabled icon="setting" >默认按钮</w-button>
-          <w-button disabled type="primary" icon="setting">主要按钮</w-button>
-          <w-button disabled type="success" icon="setting">成功按钮</w-button>
+          <w-button disabled icon="set" >默认按钮</w-button>
+          <w-button disabled type="primary" icon="set">主要按钮</w-button>
+          <w-button disabled type="success" icon="set">成功按钮</w-button>
           <w-button disabled type="info">信息按钮</w-button>
           <w-button disabled type="warning">警告按钮</w-button>
           <w-button disabled type="danger">危险按钮</w-button>
         </div>
         <br>
         <div>
-          <w-button disabled plain icon="setting">默认按钮</w-button>
-          <w-button disabled plain type="primary" icon="setting">主要按钮</w-button>
+          <w-button disabled plain icon="set">默认按钮</w-button>
+          <w-button disabled plain type="primary" icon="set">主要按钮</w-button>
           <w-button disabled plain type="success">成功按钮</w-button>
           <w-button disabled plain type="info">信息按钮</w-button>
           <w-button disabled plain type="warning">警告按钮</w-button>
@@ -120,7 +120,7 @@
     <div class="component-wrapper">
       <div class="component-wrapper-demo">
         <div>
-          <w-button icon="setting"></w-button>
+          <w-button icon="set"></w-button>
           <w-button icon="like"></w-button>
           <w-button icon="info-circle"></w-button>
           <w-button icon="bofangqi">播放器</w-button>
@@ -150,10 +150,10 @@
     <div class="component-wrapper">
       <div class="component-wrapper-demo">
         <div>
-          <w-button icon="setting" :loading="loading2" @click="loading2 = !loading2">
+          <w-button icon="set" :loading="loading2" @click="loading2 = !loading2">
             按钮
           </w-button>
-          <w-button icon="setting" :loading="loading3" @click="loading3 = !loading3" icon-position="right">
+          <w-button icon="set" :loading="loading3" @click="loading3 = !loading3" icon-position="right">
             按钮
           </w-button>
         </div>
@@ -226,7 +226,7 @@ export default {
       loading3: false,
       codeShow: `
           <w-button>默认按钮</w-button>
-          <w-button icon="setting">默认按钮</w-button>
+          <w-button icon="set">默认按钮</w-button>
           <w-button :loading="true">默认按钮</w-button>
           <w-button disabled>默认按钮</w-button>
         `.replace(/^ {8}/gm, '').trim(),

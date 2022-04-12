@@ -103,7 +103,7 @@
         </div>
       </div>
       <div class="lock-code" @click="showCode(0)" ref="xxx">
-        <w-icon class="icon-down" :name="isShow[0] === false ? 'down' : 'up'"></w-icon>
+        <w-icon class="icon-down" :name="isShow[0] === false ? 'arrow-down' : 'arrow-up'"></w-icon>
         <span class="lock-code-word">{{isShow[0] === false ? '显示代码' : '隐藏代码'}}</span>
       </div>
     </div>
@@ -149,7 +149,7 @@
         </div>
       </div>
       <div class="lock-code" @click="showCode(1)" ref="xxx">
-        <w-icon class="icon-down" :name="isShow[1] === false ? 'down' : 'up'"></w-icon>
+        <w-icon class="icon-down" :name="isShow[1] === false ? 'arrow-down' : 'arrow-up'"></w-icon>
         <span class="lock-code-word">{{isShow[1] === false ? '显示代码' : '隐藏代码'}}</span>
       </div>
     </div>
@@ -223,7 +223,7 @@
         </div>
       </div>
       <div class="lock-code" @click="showCode(2)" ref="xxx">
-        <w-icon class="icon-down" :name="isShow[2] === false ? 'down' : 'up'"></w-icon>
+        <w-icon class="icon-down" :name="isShow[2] === false ? 'arrow-down' : 'arrow-up'"></w-icon>
         <span class="lock-code-word">{{isShow[2] === false ? '显示代码' : '隐藏代码'}}</span>
       </div>
     </div>
