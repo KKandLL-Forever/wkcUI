@@ -235,8 +235,8 @@
   import Icon from '../../../src/components/icon'
   import Button from '../../../src/components/Button'
   import ButtonGroup from '../../../src/components/button-group'
-  import Row from '../../../src/components/row'
-  import Col from '../../../src/components/col'
+  import Row from '../../../src/components/Layout/row'
+  import Col from '../../../src/components/Layout/col'
   import VueHighlightJS from 'vue-highlightjs';
   import 'highlight.js/styles/atom-one-light.css';
   import mixin from '../mixin'

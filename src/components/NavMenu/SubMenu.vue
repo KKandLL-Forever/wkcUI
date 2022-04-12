@@ -22,8 +22,8 @@
 </template>
 
 <script>
-import wipe from '../wipeoutOtherState'
-import Icon from '../components/icon'
+import wipe from '../../wipeoutOtherState'
+import Icon from '../icon'
 export default {
   name: "SubMenu",
   components:{
@@ -68,7 +68,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../style/mixins/mixins';
+@import '../../style/mixins/mixins';
 
 @mixin menu-item {
   height: 36px;
