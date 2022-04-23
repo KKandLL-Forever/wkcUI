@@ -23,6 +23,13 @@ module.exports = {
           ]
         },
         {
+          title: 'Data',
+          collapsable: false,
+          children: [
+            '/ui/components/Data/Table/'
+          ]
+        },
+        {
           title: 'Navigation',
           collapsable: false,
           children: [
