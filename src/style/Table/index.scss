@@ -1,0 +1,36 @@
+@import '../common/var';
+
+.w-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-bottom: 1px solid $--border-color-base;
+    &.w-table--border {
+        border: 1px solid $--border-color-base;
+        td, th {
+            border: 1px solid $--border-color-base;
+        }
+    }
+    td, th {
+        border-bottom: 1px solid $--border-color-base;
+        text-align: left;
+        padding: 8px;
+    }
+    &.w-table--stripe {
+        tbody {
+            > tr {
+                &:nth-child(odd) {
+                    background: white;
+                }
+                &:nth-child(even) {
+                    background: lighten($--border-color-base, 10%);
+                }
+            }
+        }
+    }
+    &-wrapper {
+        position: relative;
+        overflow: auto;
+        width: 100%;
+    }
+}

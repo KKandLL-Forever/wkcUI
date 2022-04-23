@@ -13,6 +13,7 @@ module.exports = [
       {text: 'Input',link: '/records/input'},
       {text: 'Layout',link: '/records/layout'},
       {text: 'Container',link: '/records/Container'},
+      {text: 'Table',link: '/records/Table'},
     ]
   },
   {

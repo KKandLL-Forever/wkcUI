@@ -61,19 +61,19 @@
     
     
   
-    <div class="box">
-      <w-row class="demoRow" gutter="10">
-        <w-col span="18">
-          <div class="demoCol">
-            <w-button type="warning">警告按钮</w-button>
-            <w-button type="warning">警告按钮</w-button>
-          </div>
-        </w-col>
-        <w-col span="6">
-          <div class="demoCol">6</div>
-        </w-col>
-      </w-row>
-    </div>
+<!--    <div class="box">-->
+<!--      <w-row class="demoRow" gutter="10">-->
+<!--        <w-col span="18">-->
+<!--          <div class="demoCol">-->
+<!--            <w-button type="warning">警告按钮</w-button>-->
+<!--            <w-button type="warning">警告按钮</w-button>-->
+<!--          </div>-->
+<!--        </w-col>-->
+<!--        <w-col span="6">-->
+<!--          <div class="demoCol">6</div>-->
+<!--        </w-col>-->
+<!--      </w-row>-->
+<!--    </div>-->
   
     
     
@@ -195,7 +195,15 @@
     <!--        <w-menu-item menuName="message">消息中心</w-menu-item>-->
     <!--        <w-menu-item menuName="order">订单管理</w-menu-item>-->
     <!--      </w-menu>-->
-  
+    
+    <w-table
+      :columns="columns"
+      :data="data"
+      border
+      stripe
+      @select="handleSelection"
+    >
+    </w-table>
   
   </div>
 </template>
@@ -211,7 +219,17 @@ export default {
       message: '',
       defaultSelectedTab: 'tab2',
       // menu
-      activeIndex: ['center']
+      activeIndex: ['center'],
+      columns: [
+        {label: '设备ID',prop: 'deviceId'},
+        {label: '属性',prop: 'property'}
+      ],
+      data: [
+        {deviceId: '123',property: '只读'},
+        {deviceId: '456',property: '只读'},
+        {deviceId: '789',property: '只读'},
+        {deviceId: '789',property: '只读'},
+      ]
     }
   },
   methods:{
@@ -237,7 +255,11 @@ export default {
     },
     showToast1(){this.showToast('top')},
     showToast2(){this.showToast('middle')},
-    showToast3(){this.showToast('bottom')}
+    showToast3(){this.showToast('bottom')},
+    handleSelection(data){
+      let {checked,item,index} = data
+      console.log(data,'data')
+    }
   }
 }
 </script>
