@@ -8,6 +8,11 @@
   import Vue from 'vue'
   export default {
     name: "tabs",
+    provide(){
+      return {
+        eventBus: this.eventBus
+      }
+    },
     props: {
       selected:{
         type: String,
@@ -26,14 +31,6 @@
         eventBus: new Vue()
       }
     },
-    provide(){
-      return {
-        eventBus: this.eventBus
-      }
-    },
-    created(){
-
-    },
     mounted() {
       if (this.$children.length === 0){
         console && console.warn &&
@@ -51,7 +48,3 @@
 
   }
 </script>
-
-<style scoped>
-
-</style>
