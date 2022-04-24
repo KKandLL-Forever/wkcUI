@@ -9,7 +9,7 @@
     >
       <thead>
       <tr>
-        <th><input type="checkbox" ref="allChecked" @click="handleAllCheck"/></th>
+        <th><input type="checkbox" ref="allChecked" @click="handleAllCheck" :checked="areAllSelected"/></th>
         <th v-if="indexVisible">#</th>
         <th v-for="item in columns">
           {{item.label}}
@@ -63,6 +63,20 @@ export default {
       default: false
     }
     
+  },
+  computed: {
+    areAllSelected () {
+      const a = this.data.map(item => item.id).sort()
+      const b = this.selected.map(item => item.id).sort()
+      if (a.length !== b.length) { return false }
+      let equal = true
+      for (let i = 0; i < a.length; i++)
+        if (a[i] !== b[i]) {
+        equal = false
+        break
+      }
+      return equal
+    },
   },
   watch: {
     selected () {
