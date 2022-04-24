@@ -196,9 +196,11 @@
     <!--        <w-menu-item menuName="order">订单管理</w-menu-item>-->
     <!--      </w-menu>-->
     
+    {{selected}}
     <w-table
       :columns="columns"
       :data="data"
+      :selected.sync="selected"
       border
       stripe
       @select="handleSelection"
@@ -225,11 +227,12 @@ export default {
         {label: '属性',prop: 'property'}
       ],
       data: [
-        {deviceId: '123',property: '只读'},
-        {deviceId: '456',property: '只读'},
-        {deviceId: '789',property: '只读'},
-        {deviceId: '789',property: '只读'},
-      ]
+        {key: '123',property: '只读',deviceId: '1111'},
+        {key: '456',property: '只读',deviceId: '1111'},
+        {key: '789',property: '只读',deviceId: '1111'},
+        {key: '777',property: '只读',deviceId: '1111'},
+      ],
+      selected: []
     }
   },
   methods:{

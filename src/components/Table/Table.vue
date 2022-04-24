@@ -9,7 +9,7 @@
     >
       <thead>
       <tr>
-        <th><input type="checkbox" /></th>
+        <th><input type="checkbox" ref="allChecked" @click="handleAllCheck"/></th>
         <th v-if="indexVisible">#</th>
         <th v-for="item in columns">
           {{item.label}}
@@ -17,8 +17,10 @@
       </tr>
       </thead>
       <tbody>
-      <tr v-for="(item,index) in data">
-        <td><input type="checkbox" @click="handleItemCheck($event,item,index)"/></td>
+      <tr v-for="(item,index) in data" :key="item.key">
+        <td>
+          <input type="checkbox" :checked="inSelectedItems(item)" @click="handleItemCheck($event,item,index)"/>
+        </td>
         <td v-if="indexVisible">{{index}}</td>
         <template v-for="column in columns">
           <td>{{item[column.prop]}}</td>
@@ -35,11 +37,18 @@ export default {
   props: {
     columns: {
       type: Array,
-      default: []
+      default: () => []
     },
     data: {
       type: Array,
-      default: []
+      default: () => [],
+      validator (array) {
+        return !(array.filter(item => item.key === undefined).length > 0)
+      }
+    },
+    selected: {
+      type: Array,
+      default: () => []
     },
     indexVisible: {
       type: Boolean,
@@ -55,9 +64,34 @@ export default {
     }
     
   },
+  watch: {
+    selected () {
+      if (this.selected.length === this.data.length) {
+        this.$refs.allChecked.indeterminate = false
+      } else if (this.selected.length === 0) {
+        this.$refs.allChecked.indeterminate = false
+      } else {
+        this.$refs.allChecked.indeterminate = true
+      }
+    }
+  },
   methods: {
-    handleItemCheck(e,item,index){
-      this.$emit('select',{checked: e.target.checked,item,index})
+    inSelectedItems (item) {
+      return this.selected.filter(i => i.key === item.key).length > 0
+    },
+    handleItemCheck (e,item, index) {
+      let selected = e.target.checked
+      let copy = JSON.parse(JSON.stringify(this.selected))
+      if (selected) {
+        copy.push(item)
+      } else {
+        copy = copy.filter(i => i.id !== item.id)
+      }
+      this.$emit('update:selected', copy)
+    },
+    handleAllCheck (e) {
+      let selected = e.target.checked
+      this.$emit('update:selected', selected ? this.data : [])
     }
   }
 }
