@@ -117,7 +117,7 @@ export default {
 </script>
 ```
 
-## border stripe原理
+## border stripe loading原理
 动态class和样式
 
 
