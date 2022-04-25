@@ -63,6 +63,60 @@ export default {
 
 ```
 
+## 全选与反选
+
+内部维护一个被选择数据的数组selected,默认为空数组.  
+全选时,就将`this.data`赋值给`this.selected`
+而此时每条数据的checkbox的`check`状态则由`this.selected`控制
+
+:::tips
+这时单选的逻辑也相应发生变化
+
+```vue
+<template>
+  <!--省略-->
+  <input type="checkbox" :checked="inSelectedItems(item)" @click="handleItemCheck($event,item,index)"/>
+  <!--省略-->
+</template>
+<script>
+export default {
+  name: "Table",
+  props: {
+    data: {
+      type: Array,
+      default: () => [],
+      validator (array) {
+        return !(array.filter(item => item.key === undefined).length > 0)
+      }
+    },
+    selected: {
+      type: Array,
+      default: () => []
+    },
+  },
+  methods: {
+    inSelectedItems (item) {
+      return this.selected.filter(i => i.key === item.key).length > 0
+    },
+    handleItemCheck (e,item, index) {
+      let selected = e.target.checked
+      let copy = JSON.parse(JSON.stringify(this.selected))
+      if (selected) {
+        copy.push(item)
+      } else {
+        copy = copy.filter(i => i.id !== item.id)
+      }
+      this.$emit('update:selected', copy)
+    },
+    handleAllCheck (e) {
+      let selected = e.target.checked
+      this.$emit('update:selected', selected ? this.data : [])
+    }
+  }
+}
+</script>
+```
+
 ## border stripe原理
 动态class和样式
 
