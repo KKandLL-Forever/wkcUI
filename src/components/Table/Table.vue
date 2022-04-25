@@ -1,5 +1,8 @@
 <template>
   <div class="w-table-wrapper">
+    <div class="w-table--loading" v-if="loading">
+      <w-icon name="loading"></w-icon>
+    </div>
     <table
       class="w-table"
       :class="[
@@ -59,6 +62,10 @@ export default {
       default: false
     },
     stripe: {
+      type: Boolean,
+      default: false
+    },
+    loading: {
       type: Boolean,
       default: false
     }
